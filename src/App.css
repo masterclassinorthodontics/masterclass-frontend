@@ -1,0 +1,74 @@
+
+@import "tailwindcss";
+@theme {
+  --font-pinyon: "Pinyon Script", cursive;
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Flip animation for countdown numbers */
+@keyframes flip {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+.flip {
+  animation: flip 0.5s ease-in-out;
+}
+
+@font-face {
+  font-family: 'Telegraf';
+  src: url('./assets/fonts/telegraf/Telegraf\ UltraLight\ 200.otf') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telegraf';
+  src: url('/fonts/Telegraf-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@theme {
+  /* This overrides the default 'sans' font used by Tailwind */
+  --font-sans: "Telegraf", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* This applies it to the whole website automatically */
+@layer base {
+  html, body {
+    font-family: var(--font-sans);
+  }
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 0.6s infinite;
+}
