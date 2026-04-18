@@ -239,7 +239,7 @@ const handleSubmit = async (e) => {
       <Navbar />
 
       <section
-        className="min-h-screen bg-gray-100 px-6 py-[10%]"
+        className="min-h-screen bg-gray-100 px-6 py-[30%] lg:py-[10%]"
         style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),url(${gridBg})`,
           backgroundSize: "contain",

@@ -34,6 +34,7 @@ import img25 from "../assets/images/instituition-imgs/DJ College of Dental Scien
 import img26 from "../assets/images/instituition-imgs/SMBT Dental College and Hospital, Sangamner, Maharashtra.png"
 import img27 from "../assets/images/instituition-imgs/KMCT DENTAL COLLEGE AND HOSPITAL, KOZHIKODE, KERALA, INDIA.png"
 import img28 from "../assets/images/instituition-imgs/SUDHA RUSTAGI DENTAL SCIENCES AND RESEARCH, FARIDABAD, HARYANA, INDIA.png"
+import img29 from "../assets/images/instituition-imgs/Subharti Dental College and Hospital, Meerut, India.png"
 
 
 import Navbar from "../components/Navbar";
@@ -47,39 +48,40 @@ const images = [
   img10, img11, img12,
   img13, img14, img15,
   img16, img17, img18,
-  img19, img20, img21, img22, img23, img24, img25, img26, img27, img28
+  img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29
 ];
 
 /* ---------------- COLLEGE DATA ---------------- */
 const colleges = [
-  { name: "Ahmedabad Dental College and Hospital", city: "Ahmedabad", state: "Gujarat", additionalInfo: "Additional Information" },
-  { name: "Malabar Dental College and Research Centre", city: "Malappuram", state: "Kerala, India", additionalInfo: "Additional Information" },
-  { name: "Malla Reddy Dental College for Women", city: "Hyderabad", state: "Telangana, India", additionalInfo: "Additional Information" },
-  { name: "M.A. Rangoonwala Dental College", city: "Pune", state: "Maharashtra, India", additionalInfo: "Additional Information" },
-  { name: "Malla Reddy Institute of Dental Sciences", city: "Hyderabad", state: "Telangana, India", additionalInfo: "Additional Information" },
-  { name: "Al-Badar Dental College and Hospital", city: "Kalaburagi", state: "Karnataka, India", additionalInfo: "Additional Information" },
-  { name: "NAMS Bir Hospital", city: "Kathmandu", state: "Nepal", additionalInfo: "Additional Information" },
-  { name: "Narayana Dental College and Hospital", city: "Nellore", state: "Andhra Pradesh, India", additionalInfo: "Additional Information" },
-  { name: "Peoples Dental Academy", city: "Bhopal", state: "Madhya Pradesh, India", additionalInfo: "Additional Information" },
-  { name: "Shree Bankey Bihari Dental College", city: "Ghaziabad", state: "Uttar Pradesh, India", additionalInfo: "Additional Information" },
-  { name: "Sri Balaji Dental College and Hospital", city: "Chennai", state: "Tamil Nadu, India", additionalInfo: "Additional Information" },
-  { name: "Sri Hasanamba Dental College and Hospital", city: "Hassan", state: "Karnataka, India", additionalInfo: "Additional Information" },
-  { name: "Sri Venkateshwara Dental College and Hospital", city: "Chennai", state: "Tamil Nadu, India", additionalInfo: "Additional Information" },
-  { name: "Terna Dental College and Hospital", city: "Navi Mumbai", state: "Maharashtra, India", additionalInfo: "Additional Information" },
-  { name: "Ranjeet Deshmukh College of Dental Sciences", city: "Nagpur", state: "Maharashtra, India", additionalInfo: "Additional Information" },
-  { name: "G. Pulla Reddy Dental College and Hospital", city: "Kurnool", state: "Andhra Pradesh, India", additionalInfo: "Additional Information" },
-  { name: "Vinayaka Missions Dental College", city: "Salem", state: "Tamil Nadu, India", additionalInfo: "Additional Information" },
-  { name: "S.C.B. Dental College and Hospital", city: "Cuttack", state: "Odisha, India", additionalInfo: "Additional Information" },
-  { name: "Oxford Dental College and Hospital", city: "Bangalore", state: "Karnataka, India", additionalInfo: "Additional Information" },
-  { name: "College of Dental Sciences (CODS)", city: "Davangere", state: "Karnataka, India", additionalInfo: "Additional Information" },
-  { name: "Sri Balaji Dental College and Hospital", city: "Hyderabad", state: "Telangana, India", additionalInfo: "Additional Information" },
-  { name: "SRM Dental College and Hospital", city: "Chennai", state: "Tamil Nadu, India", additionalInfo: "Additional Information" },
-  { name: "St. Joseph Dental College and Hospital", city:"Duggirala", state: "Andhra Pradesh, India", additionalInfo: "Additional Information"},
+  { name: "Ahmedabad Dental College and Hospital", city: "Ahmedabad", state: "Gujarat" },
+  { name: "Malabar Dental College and Research Centre", city: "Malappuram", state: "Kerala, India" },
+  { name: "Malla Reddy Institute of Dental Sciences and Hospital", city: "Hyderabad", state: "Telangana, India" },
+  { name: "M.A. Rangoonwala College of Dental Sciences and Research Centre", city: "Pune", state: "Maharashtra, India" },
+  { name: "Malla Reddy Institute of Dental Sciences and Hospital", city: "Hyderabad", state: "Telangana, India" },
+  { name: "Al-Badar Dental College and Hospital", city: "Kalaburagi", state: "Karnataka, India" },
+  { name: "National Academy of Medical Sciences (NAMS), Bir Hospital", city: "Kathmandu", state: "Nepal" },
+  { name: "Narayana Dental College and Hospital", city: "Nellore", state: "Andhra Pradesh, India" },
+  { name: "Peoples Dental Academy", city: "Bhopal", state: "Madhya Pradesh, India" },
+  { name: "Shree Bankey Bihari Dental College and Research Centre", city: "Ghaziabad", state: "Uttar Pradesh, India" },
+  { name: "Sree Balaji Dental College and Hospital", city: "Chennai", state: "Tamil Nadu, India" },
+  { name: "Sri Hasanamba Dental College and Hospital", city: "Hassan", state: "Karnataka, India" },
+  { name: "Sri Venkateshwara Dental College and Hospital", city: "Chennai", state: "Tamil Nadu, India" },
+  { name: "TPCT's Terna Dental College and Hospital", city: "Navi Mumbai", state: "Maharashtra, India" },
+  { name: "Ranjeet Deshmukh Dental College and Research Centre", city: "Nagpur", state: "Maharashtra, India" },
+  { name: "G. Pulla Reddy Dental College and Hospital", city: "Kurnool", state: "Andhra Pradesh, India" },
+  { name: "Vinayaka Mission's Sankaracharya Dental College and Hospital", city: "Salem", state: "Tamil Nadu, India" },
+  { name: "S.C.B. Dental College and Hospital", city: "Cuttack", state: "Odisha, India" },
+  { name: "Oxford Dental College and Hospital", city: "Bangalore", state: "Karnataka, India" },
+  { name: "College of Dental Sciences (CODS)", city: "Davangere", state: "Karnataka, India" },
+  { name: "Sri Balaji Dental College and Hospital", city: "Hyderabad", state: "Telangana, India" },
+  { name: "SRM Kattankulathur Dental College and Hospital", city: "Chennai", state: "Tamil Nadu, India" },
+  { name: "St. Joseph Dental College and Hospital", city:"Duggirala", state: "Andhra Pradesh, India" },
   { name: "Institute of Dental Sciences and Hospital", city:"(Sikha 'O'", state:"Anusandhan University )", additionalInfo: "Bhubaneswar, Odisha India"},
   { name: "D J College of Dental Sciences & Research", city: "Ghaziabad", state:"Uttar Pradesh, India"},
   { name: "SMBT Dental College and Hospital", city: "Sangamner", state:"Maharastra, India"},
   { name: "KMCT Dental College and Hospital", city: "Kozhikode", state:"Kerala, India"},
-  { name: "Sudha Rustagi College of Dental Sciences and Research", city: "Faridabad", state:"Haryana, India"}
+  { name: "Sudha Rustagi College of Dental Sciences and Research", city: "Faridabad", state:"Haryana, India"},
+  { name: "Subharti Dental College and Hospital", state:"Swami Vivekanand Subharti University", additionalInfo: "Meerut, Uttar Pradesh, India"},
 ];
 
 /* ---------------- MERGED DATA ---------------- */

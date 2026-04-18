@@ -25,12 +25,13 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full h-[14vh] px-2 flex items-center bg-[#1A1831] z-50 isolation-isolate">
 
       {/* Logo (30%) */}
-      <div className="w-[20%] h-full flex items-center justify-start">
+      <div className="w-[50%] md:w-[20%] h-full flex items-center justify-start">
         <Link to="/" onClick={() => setOpen(false)}>
           <img
             src={logo}
             alt="Logo"
             className="h-[75%] cursor-pointer mix-blend-screen"
+            loading="lazy"
           />
         </Link>
       </div>
@@ -43,6 +44,7 @@ const Navbar = () => {
               src={item.img}
               alt={`nav-${i}`}
               className="h-full cursor-pointer mix-blend-screen hover:scale-104 transition-transform duration-300"
+              loading="lazy"
             />
           </Link>
         ))}
@@ -87,6 +89,7 @@ const Navbar = () => {
               alt={`mobile-nav-${i}`}
               className="h-12 mix-blend-screen transition-all duration-500"
               style={{ transitionDelay: `${i * 100}ms` }}
+              loading="lazy"
             />
           </Link>
         ))}

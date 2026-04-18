@@ -92,7 +92,7 @@ export default function MasterclassFaculty() {
       <Navbar />
 
       <section
-        className="min-h-screen bg-gray-100 px-6 py-[10%]"
+        className="min-h-screen bg-gray-100 px-6 py-[40%] lg:py-[10%]"
         style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,0.78),
           rgba(255,255,255,0.78)),url(${gridBg})`,
@@ -168,7 +168,7 @@ export default function MasterclassFaculty() {
               href={termsPdf}
               download
             >
-              <img src={downloadpdf} className="w-[25vw]" />
+              <img src={downloadpdf} className="w-[25vw]" loading="lazy" />
             </a>
           </div>
 
@@ -202,7 +202,7 @@ export default function MasterclassFaculty() {
           </label>
 
           <button type="submit">
-            <img src={submitbtn} className="lg:w-[30vw] sm:w-[60vw]" />
+            <img src={submitbtn} className="lg:w-[30vw] sm:w-[60vw]" loading="lazy" />
           </button>
 
         </form>

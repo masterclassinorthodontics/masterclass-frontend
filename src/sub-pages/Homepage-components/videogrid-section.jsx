@@ -23,6 +23,7 @@ const VideoGridSection = () => {
           lg:w-[55%]
           mx-auto
         "
+        loading="lazy"
       />
 
       {/* Video Grid */}

@@ -9,6 +9,7 @@ const BannerSection = () => {
     src={MyImage}
     alt="Banner"
     className="max-w-full max-h-full object-contain md:object-cover"
+    loading="lazy"
   />
 </section>
 

@@ -55,6 +55,7 @@ const CountdownSection = () => {
         alt="Register Now"
         // onClick={() => navigate("/register")}
         className="cursor-pointer w-[75%] md:w-[65%] lg:w-[55%] animate-fadeIn"
+        loading="lazy"
       />
 
       {/* TIMER IMAGE */}

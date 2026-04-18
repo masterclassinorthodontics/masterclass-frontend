@@ -17,6 +17,7 @@ const ContactSection = () => {
         src={topImg}
         alt="Top Image"
         className="w-[75%] sm:w-[75%] md:w-[65%] lg:w-[55%] mx-auto"
+        loading="lazy"
       />
 
       {/* Two Column Layout */}

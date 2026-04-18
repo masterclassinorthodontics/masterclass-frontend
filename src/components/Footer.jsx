@@ -10,7 +10,7 @@ export default function Footer() {
         
         {/* ================= COLUMN 1 ================= */}
         <div>
-          <img src={logo} alt="ECO Academy" className="w-60 mb-6" />
+          <img src={logo} alt="ECO Academy" className="w-60 mb-6" loading="lazy" />
 
           <div className="flex gap-4">
             <a

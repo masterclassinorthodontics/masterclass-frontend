@@ -22,7 +22,7 @@ const subscriptiontwelvemonth = () =>{
         }}
         >
           {/* Top Image */}
-          <img src={logo} alt="Logo" className="w-1/3 mb-4" />
+          <img src={logo} alt="Logo" className="w-1/3 mb-4" loading="lazy" />
     
           <h1 className="text-xl font-semibold text-center">
             ECO ACADEMY INITIATIVE
@@ -65,7 +65,7 @@ const subscriptiontwelvemonth = () =>{
               setLoading(true);
 
               const res = await fetch(
-                "https://powderblue-wasp-496475.hostingersite.com/php_php/subscription_twelve.php",
+                "https://masterclassinorthodontics.com/php_php/subscription_twelve.php",
                 {
                   method: "POST",
                   headers: {
@@ -93,7 +93,7 @@ const subscriptiontwelvemonth = () =>{
               // 🔥 DEBUG END
 
               if (data.status === "success") {
-                window.location.href = `https://powderblue-wasp-496475.hostingersite.com/php_php/subscription_twelve.php?id=${data.id}`;
+                window.location.href = `https://masterclassinorthodontics.com/php_php/subscription_twelve.php?id=${data.id}`;
               } else {
                 alert(data.message || "Submission failed. Please try again.");
               }
@@ -284,6 +284,7 @@ const subscriptiontwelvemonth = () =>{
                 src={submitBtn}
                 alt="Submit"
                 className="w-1/2 hover:scale-105 transition"
+                loading="lazy"
               />
             </button>
           </form>

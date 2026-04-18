@@ -20,7 +20,7 @@ const subscriptionindividual = () =>{
         </Helmet>
         <Navbar/>
         <section
-  className="min-h-screen py-32"
+  className="h-[150vh] py-32"
   style={{
     backgroundImage: `linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),url(${bg})`,
   }}
@@ -33,41 +33,48 @@ const subscriptionindividual = () =>{
         src={sparkimg}
         alt="Left"
         className="w-full max-w-none object-contain px-4 lg:px-10"
+        loading="lazy"
       />
     </div>
 
     {/* Right Section */}
-    <div className="w-full lg:w-1/2 relative flex justify-center items-center">
-      
-      {/* Background */}
-      <img
-        src={bodybtn}
-        alt="Right"
-        className="w-full max-w-none object-contain px-4 lg:px-10"
-      />
+    <div className="w-full lg:w-1/2 flex justify-center items-center">
+      <div className="relative w-full max-w-[900px] lg:max-w-[1000px] aspect-[3/4]">
 
-      {/* Overlay Buttons */}
-      <div className="absolute top-[58%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-        <h2 className="font-semibold text-lg md:text-2xl blink mb-8 -mt-8 md:-mt-8 blink">SUBSCRIBE NOW</h2>
-        
-        <Link to="/subscription-onemonth">
-          <img src={subsone} className="w-48 lg:w-72 xl:w-108 object-contain" />
-        </Link>
+    {/* Background */}
+    <img
+      src={bodybtn}
+      alt="Right"
+      className="absolute inset-0 w-full h-full object-contain"
+      loading="lazy"
+    />
 
-        <Link to="/subscription-threemonth">
-          <img src={substwo} className="w-48 lg:w-72 xl:w-108 object-contain" />
-        </Link>
+    {/* Overlay */}
+    <div className="absolute top-[10%] inset-0 flex flex-col items-center justify-center px-4">
 
-        <Link to="/subscription-sixmonth">
-          <img src={substhree} className="w-48 lg:w-72 xl:w-108 object-contain" />
-        </Link>
+      <h2 className="font-semibold text-base md:text-xl lg:text-2xl mb-4 blink">
+        SUBSCRIBE NOW
+      </h2>
 
-        <Link to="/subscription-twelve">
-          <img src={subsfour} className="w-48 lg:w-72 xl:w-108 object-contain" />
-        </Link>
+      <Link to="/subscription-onemonth">
+        <img src={subsone} className="w-52 sm:w-48 md:w-72 lg:w-120 object-contain" />
+      </Link>
 
-      </div>
+      <Link to="/subscription-threemonth">
+        <img src={substwo} className="w-52 sm:w-48 md:w-72 lg:w-120 object-contain" />
+      </Link>
+
+      <Link to="/subscription-sixmonth">
+        <img src={substhree} className="w-52 sm:w-48 md:w-72 lg:w-120 object-contain" />
+      </Link>
+
+      <Link to="/subscription-twelve">
+        <img src={subsfour} className="w-52 sm:w-48 md:w-72 lg:w-120 object-contain" />
+      </Link>
+
     </div>
+  </div>
+</div>
   </div>
 </section>
         <Footer/>

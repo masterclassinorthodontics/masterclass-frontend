@@ -91,6 +91,7 @@ const ImageCarouselSection = () => {
         src={buttonImg}
         alt="Button"
         className="w-[75%] md:w-[65%] lg:w-[55%]"
+        loading="lazy"
       />
 
       <div className="w-full overflow-hidden">
@@ -113,6 +114,7 @@ const ImageCarouselSection = () => {
                 src={img}
                 alt={`carousel-${i}`}
                 className="w-[90%] object-contain"
+                loading="lazy"
               />
             </div>
           ))}

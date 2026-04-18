@@ -62,7 +62,7 @@ export default function EnrollmentForm() {
     </Helmet>
       <Navbar />
       <section
-        className="min-h-screen bg-gray-100 px-6 py-[10%]"
+        className="min-h-screen bg-gray-100 px-6 py-[30%] lg:py-[10%]"
         style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),url(${gridBg})`,
           backgroundSize: "contain",
@@ -105,7 +105,7 @@ export default function EnrollmentForm() {
           <div className="bg-white h-[15vh] flex justify-between items-center px-6 rounded shadow">
             <strong className="text-lg">Memorandum of Understanding (MOU) Details</strong>
             <a href="/files/MOU-SAMPLE-FOR-APPROVAL.docx" download> 
-              <img src={downloadmou} alt="Download MOU" className="w-100 cursor-pointer" />
+              <img src={downloadmou} alt="Download MOU" className="w-100 cursor-pointer" loading="lazy" />
             </a>
           </div>
 
@@ -207,7 +207,7 @@ export default function EnrollmentForm() {
           {/* Submit Button */}
           <div className="text-start pt-8">
             <button type="submit">
-              <img src={submitenrolbtn} alt="Submit Enrollment Form" className="mx-auto w-[30vw] cursor-pointer" />
+              <img src={submitenrolbtn} alt="Submit Enrollment Form" className="mx-auto w-[30vw] cursor-pointer" loading="lazy" />
             </button>
           </div>
         </form>

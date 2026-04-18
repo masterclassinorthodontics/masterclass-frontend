@@ -48,7 +48,7 @@ const FAQSection = () => {
     >
       {/* Top Header Image */}
       <div className="w-[75%] md:w-[65%] lg:w-[55%] mb-8">
-        <img src={faqbtn} alt="FAQ" className="w-full" />
+        <img src={faqbtn} alt="FAQ" className="w-full" loading="lazy" />
       </div>
 
       {/* Main Container */}

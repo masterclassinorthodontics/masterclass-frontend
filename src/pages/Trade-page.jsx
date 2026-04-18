@@ -59,7 +59,7 @@ export default function TradeForm() {
       <Navbar />
 
       <section
-        className="w-full min-h-screen flex justify-center py-[6%]"
+        className="w-full min-h-screen flex justify-center py-[25%] lg:py-[6%]"
         style={{
           backgroundImage: `linear-gradient(rgba(250, 250, 250, 0.5),rgba(253, 253, 253, 0.65)),url(${subartbg})`,
         }}

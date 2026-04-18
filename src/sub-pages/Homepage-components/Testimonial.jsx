@@ -93,6 +93,7 @@ export default function TestimonialsSection() {
                     src={feedbackbtn}
                     alt="Testimonials"
                     className="w-[85%] md:w-[65%]"
+                    loading="lazy"
                 />
             </div>
 
@@ -123,6 +124,7 @@ export default function TestimonialsSection() {
                                     src={item.image}
                                     alt={item.name}
                                     className="w-24 h-24 rounded-full border-4 border-white shadow-md object-cover bg-white"
+                                    loading="lazy"
                                 />
                                 <p className="mt-3 font-semibold text-gray-800 text-sm uppercase">
                                     {item.name}

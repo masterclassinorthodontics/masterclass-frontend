@@ -10,6 +10,7 @@ const BegBannerSection = () => {
     src={bengalurubannerimg}
     alt="Banner"
     className="w-full h-full object-contain md:object-cover"
+    loading="lazy"
   />
 </section>
 

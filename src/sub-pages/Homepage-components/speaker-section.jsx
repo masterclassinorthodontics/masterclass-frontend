@@ -103,6 +103,7 @@ export default function SpeakersSection() {
               src={speaker.img}
               alt={speaker.name}
               className="w-full h-full object-cover rounded-4xl hover:shadow-2xl"
+              loading="lazy"
             />
 
             {/* Info Box */}

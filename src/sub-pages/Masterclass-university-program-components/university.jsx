@@ -46,7 +46,7 @@ const MasterclassUniversityProgram = () => {
 
       {/* 🔹 FIRST SECTION (unchanged) */}
       <section
-        className="w-full py-32 px-4 bg-no-repeat bg-left bg-cover lg:bg-contain"
+        className="w-full pt-40 bg-no-repeat bg-center bg-cover md:bg-cover lg:bg-cover"
         style={{
           backgroundImage: `url(${universitybg})`,}}
       >
@@ -56,7 +56,7 @@ const MasterclassUniversityProgram = () => {
               Masterclass University Program
             </h3>
 
-            <div className="text-[18px] text-gray-500 leading-6 space-y-6">
+            <div className="text-[18px] text-gray-500 leading-6 space-y-6 text-justify">
               <p>
                 Masterclass University Program is conceptualized by ECO (Excellence in ClinicalOrthodontics) Academy – the brainchild of Dr.Abhisek Ghosh and Dr.Adith Venugopal. This program is ably supported by its board members and technical team comprising of – Dr. Venkata Palla Yudhistar, Dr.Digvijay Patil, Dr.Digant Thakkar, Dr.Sumath Kumar Rengarajan and a team of close to 100 senior faculty members.
               </p>
@@ -86,6 +86,7 @@ const MasterclassUniversityProgram = () => {
                   (window.location.href =
                     "/foreword")
                 }
+                loading="lazy"
               />
 
               <img
@@ -93,6 +94,7 @@ const MasterclassUniversityProgram = () => {
                 alt="Program Button 2"
                 className="w-[90%] sm:w-[80%] md:w-[70%] cursor-pointer"
                 onClick={() => (window.location.href = "https://api.whatsapp.com/send/?phone=918697191291")}
+                loading="lazy"
               />
             </div>
           </div>
@@ -112,17 +114,44 @@ const MasterclassUniversityProgram = () => {
       >
         <div className="px-4 sm:px-10 lg:px-[12vw]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-10">
-            {[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12].map(
-              (img, i) => (
-                <Link to={imageRoutes[i]} key={i}>
-                  <img
-                    src={img}
-                    className="w-full cursor-pointer"
-                    alt={`program-${i}`}
-                  />
-                </Link>
-              )
-            )}
+            {/* 🔹 MOBILE: custom order */}
+  <div className="block md:hidden space-y-8">
+    {/* Odd indexes */}
+    {[img1, img3, img5, img7, img9, img11].map((img, i) => {
+      const originalIndex = i * 2; // 0,2,4...
+      return (
+        <Link to={imageRoutes[originalIndex]} key={`odd-${i}`}>
+          <img src={img} className="w-full cursor-pointer" />
+        </Link>
+      );
+    })}
+
+    {/* Even indexes */}
+    {[img2, img4, img6, img8, img10, img12].map((img, i) => {
+      const originalIndex = i * 2 + 1; // 1,3,5...
+      return (
+        <Link to={imageRoutes[originalIndex]} key={`even-${i}`}>
+          <img src={img} className="w-full cursor-pointer" />
+        </Link>
+      );
+    })}
+  </div>
+
+  {/* 🔹 DESKTOP: original layout untouched */}
+  <div className="hidden md:grid md:grid-cols-2 gap-y-8 gap-x-10 col-span-1 md:col-span-2">
+    {[img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12].map(
+      (img, i) => (
+        <Link to={imageRoutes[i]} key={i}>
+          <img
+            src={img}
+            className="w-full cursor-pointer"
+            alt={`program-${i}`}
+            loading="lazy"
+          />
+        </Link>
+      )
+    )}
+  </div>
 
             {/* LAST IMAGE */}
             {/* <Link to="/zoom-meeting" >

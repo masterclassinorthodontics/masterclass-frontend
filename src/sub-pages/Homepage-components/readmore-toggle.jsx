@@ -40,6 +40,7 @@ Come, join us and be a part of this journey of raising the bar of Excellence in 
           src={visionbtn}
           alt="Masterclass"
           className="w-[75%] sm:w-[65%] lg:w-[55%]"
+          loading="lazy"
         />
       </div>
 

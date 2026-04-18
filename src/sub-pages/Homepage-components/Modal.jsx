@@ -14,6 +14,7 @@ export default function Modal({ image, onClose }) {
         src={image}
         alt="Speaker"
         className="max-w-[90%] max-h-[85%] rounded-lg"
+        loading="lazy"
       />
     </div>
   );
