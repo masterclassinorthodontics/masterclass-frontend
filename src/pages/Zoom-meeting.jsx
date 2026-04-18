@@ -144,6 +144,18 @@ export default function ZoomSection() {
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/86559443951?pwd=t1YzGbRsbPv4TAKPVzZ5at0TpGostx.1",
     },
+    "bonitamathew92@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/86559443951?pwd=t1YzGbRsbPv4TAKPVzZ5at0TpGostx.1",
+    },
+    "draamod_karandikar@yahoo.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/86559443951?pwd=t1YzGbRsbPv4TAKPVzZ5at0TpGostx.1",
+    },
+    "jairaj.vani26@gmail.com":{
+      password:"MUPIND3",
+      link:"https://us06web.zoom.us/j/86559443951?pwd=t1YzGbRsbPv4TAKPVzZ5at0TpGostx.1",
+    },
     RUPAM: {
       password: "RUPAM",
       link: "https://us06web.zoom.us/j/86559443951?pwd=t1YzGbRsbPv4TAKPVzZ5at0TpGostx.1",
@@ -236,7 +248,7 @@ export default function ZoomSection() {
       <title>ACCESS TO LIVE WEBINAR - Masterclass in Orthodontics</title>
     </Helmet>
     <Navbar/>
-    <section className="w-full min-h-screen py-30 bg-no-repeat bg-cover bg-center py-30"
+    <section className="w-full min-h-screen pt-48 pb-10 bg-no-repeat bg-cover bg-center"
     style={{
         backgroundImage:`linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),url(${pagebg})`,
     }}

@@ -24,6 +24,21 @@ const Home=()=>{
         <>
         <Helmet>
             <title>HOME - Masterclass in Orthodontics</title>
+
+            <meta name="description" content="Masterclass in Orthodontics - Learn from top experts and enhance your skills." />
+
+    {/* Open Graph (VERY IMPORTANT) */}
+    <meta property="og:title" content="Masterclass in Orthodontics" />
+    <meta property="og:description" content="Join the leading orthodontics masterclass with expert speakers and workshops." />
+    <meta property="og:image" content="https://masterclassinorthodontics.com/preview.jpg" />
+    <meta property="og:url" content="https://masterclassinorthodontics.com/" />
+    <meta property="og:type" content="website" />
+
+    {/* WhatsApp / Twitter */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Masterclass in Orthodontics" />
+    <meta name="twitter:description" content="Join expert orthodontics training sessions." />
+    <meta name="twitter:image" content="https://masterclassinorthodontics.com/logo.png" />
         </Helmet>
             <div>
                 <Navbar/>
