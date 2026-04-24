@@ -35,6 +35,7 @@ import img26 from "../assets/images/instituition-imgs/SMBT Dental College and Ho
 import img27 from "../assets/images/instituition-imgs/KMCT DENTAL COLLEGE AND HOSPITAL, KOZHIKODE, KERALA, INDIA.png"
 import img28 from "../assets/images/instituition-imgs/SUDHA RUSTAGI DENTAL SCIENCES AND RESEARCH, FARIDABAD, HARYANA, INDIA.png"
 import img29 from "../assets/images/instituition-imgs/Subharti Dental College and Hospital, Meerut, India.png"
+import img30 from "../assets/images/instituition-imgs/Sri Ramakrishna Dental College and Hospital, Coimbatore, India.png"
 
 
 import Navbar from "../components/Navbar";
@@ -48,7 +49,7 @@ const images = [
   img10, img11, img12,
   img13, img14, img15,
   img16, img17, img18,
-  img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29
+  img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30
 ];
 
 /* ---------------- COLLEGE DATA ---------------- */
@@ -82,6 +83,7 @@ const colleges = [
   { name: "KMCT Dental College and Hospital", city: "Kozhikode", state:"Kerala, India"},
   { name: "Sudha Rustagi College of Dental Sciences and Research", city: "Faridabad", state:"Haryana, India"},
   { name: "Subharti Dental College and Hospital", state:"Swami Vivekanand Subharti University", additionalInfo: "Meerut, Uttar Pradesh, India"},
+  { name: "Sri Ramakrishna Dental College and Hospital", city: "Coimbatore", state:"Tamil Nadu, India"},
 ];
 
 /* ---------------- MERGED DATA ---------------- */

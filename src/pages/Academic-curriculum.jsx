@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { Helmet } from "react-helmet";
 
 import gridbg from "../assets/images/from-bg.png";
@@ -89,6 +90,8 @@ const rowsData = [
 ];
 
 const AcademicCurriculumsection = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
     <>
     <Helmet>
@@ -113,7 +116,7 @@ const AcademicCurriculumsection = () => {
               <img
                 src={row.main}
                 alt="Main"
-                className="w-[30vw] h-auto object-contain"
+                className="w-[80vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] h-auto object-cover"
               />
             </div>
 
@@ -124,6 +127,7 @@ const AcademicCurriculumsection = () => {
                   <img
                     src={img}
                     alt="Row Image"
+                    onClick={()=>setSelectedImage(img)}
                     className="w-full h-auto object-contain"
                   />
                 </div>
@@ -138,6 +142,28 @@ const AcademicCurriculumsection = () => {
         ))}
       </div>
     </section>
+    {selectedImage && (
+  <div
+    className="fixed inset-0 bg-black/80 backdrop-blur-sm bg-opacity-80 flex items-center justify-center z-50"
+    onClick={() => setSelectedImage(null)}
+  >
+    {/* Close Button */}
+    <button
+      className="absolute top-5 right-5 text-white text-4xl font-bold"
+      onClick={() => setSelectedImage(null)}
+    >
+      &times;
+    </button>
+
+    {/* Image */}
+    <img
+      src={selectedImage}
+      alt="Preview"
+      onClick={(e) => e.stopPropagation()}
+      className="max-w-[90%] max-h-[90%] object-contain"
+    />
+  </div>
+)}
     <Footer/>
     </>
   );
