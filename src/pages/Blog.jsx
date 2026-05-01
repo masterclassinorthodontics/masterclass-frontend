@@ -38,8 +38,8 @@ export default function RevolutionSection() {
           </div>
 
           {/* Right Column */}
-          <div className="flex flex-col justify-center text-left">
-            <h2 className="text-[32px] font-semibold text-black leading-snug mb-5">
+          <div className="flex flex-col justify-center text-justify">
+            <h2 className="text-[28px] font-semibold text-black leading-snug mb-5">
               <span className="block">
                 Revolutionizing Orthodontics:
               </span>

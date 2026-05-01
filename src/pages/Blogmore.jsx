@@ -22,12 +22,11 @@ export default function MoreBlogsection(){
 
   {/* Subtitle */}
   <h2 className="text-xl font-semibold text-gray-600">
-    Revolutionizing Orthodontics: The Synergy of 3D Printed Appliances and
-    Temporary Anchorage Devices (TADs)
+    Author : By Dr. Ajit Kalia
   </h2>
 
   {/* Content */}
-  <div className="space-y-5 text-base leading-relaxed">
+  <div className="space-y-5 text-base leading-relaxed text-justify">
     <p>
       The field of orthodontics has experienced a transformative revolution due
       to technological advancements, particularly the integration of 3D printing
