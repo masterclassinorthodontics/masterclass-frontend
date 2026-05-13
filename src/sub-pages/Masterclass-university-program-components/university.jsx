@@ -56,7 +56,7 @@ const MasterclassUniversityProgram = () => {
               Masterclass University Program
             </h3>
 
-            <div className="text-[18px] text-gray-500 leading-6 space-y-6 text-justify">
+            <div className="text-[15px] sm:text-[16px] md:text-[18px] text-gray-500 leading-7 space-y-6 text-justify break-words overflow-hidden px-2 sm:px-0">
               <p>
                 Masterclass University Program is conceptualized by ECO (Excellence in ClinicalOrthodontics) Academy – the brainchild of Dr.Abhisek Ghosh and Dr.Adith Venugopal. This program is ably supported by its board members and technical team comprising of – Dr. Venkata Palla Yudhistar, Dr.Digvijay Patil, Dr.Digant Thakkar, Dr.Sumath Kumar Rengarajan and a team of close to 100 senior faculty members.
               </p>
