@@ -158,6 +158,10 @@ export default function ZoomSection() {
       password:"MUPIND3",
       link:"https://us06web.zoom.us/j/86251451855?pwd=lIixT0hE1xqrOaWYoESZZXxlTIoDtc.1",
     },
+    "drgeethamds@gmail.com":{
+      password:"MUPIND3",
+      link:"https://us06web.zoom.us/j/86251451855?pwd=lIixT0hE1xqrOaWYoESZZXxlTIoDtc.1",
+    },
     RUPAM: {
       password: "RUPAM",
       link: "https://us06web.zoom.us/j/86251451855?pwd=lIixT0hE1xqrOaWYoESZZXxlTIoDtc.1",
