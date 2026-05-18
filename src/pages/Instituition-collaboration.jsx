@@ -56,7 +56,7 @@ const images = [
 const colleges = [
   { name: "Ahmedabad Dental College and Hospital", city: "Ahmedabad", state: "Gujarat" },
   { name: "Malabar Dental College and Research Centre", city: "Malappuram", state: "Kerala, India" },
-  { name: "Malla Reddy Institute of Dental Sciences and Hospital", city: "Hyderabad", state: "Telangana, India" },
+  { name: "Malla Reddy Dental College for Women", city: "Hyderabad", state: "Telangana, India" },
   { name: "M.A. Rangoonwala College of Dental Sciences and Research Centre", city: "Pune", state: "Maharashtra, India" },
   { name: "Malla Reddy Institute of Dental Sciences and Hospital", city: "Hyderabad", state: "Telangana, India" },
   { name: "Al-Badar Dental College and Hospital", city: "Kalaburagi", state: "Karnataka, India" },
@@ -121,7 +121,7 @@ const Insticollabsection = () => {
           <img
             src={mainImage}
             alt="MOU Main"
-            className="w-[35vw] object-contain"
+            className="w-full md:w-[35vw] object-contain"
           />
         </div>
 
