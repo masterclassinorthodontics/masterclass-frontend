@@ -7,11 +7,11 @@ import nat1 from "../assets/images/Faculty-img.png";
 import nat2 from "../assets/images/faculty-img2.png";
 import nat3 from "../assets/images/faculty-img3.png";
 import nat4 from "../assets/images/faculty-img4.png";
-import nat5 from "../assets/images/faculty-img54.png";
+import nat5 from "../assets/images/faculty-img05.png";
 
 // International Faculty Images
 import int1 from "../assets/images/faculty-int-img.png";
-import int2 from "../assets/images/faculty-int-img-3.png";
+import int2 from "../assets/images/faculty-int-img-02.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
