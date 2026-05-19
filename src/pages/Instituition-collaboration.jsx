@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Helmet } from "react-helmet";
 
 // Main image
@@ -93,6 +93,8 @@ const institutions = images.map((img, index) => ({
 }));
 
 const Insticollabsection = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
     <Helmet>
@@ -121,7 +123,8 @@ const Insticollabsection = () => {
           <img
             src={mainImage}
             alt="MOU Main"
-            className="w-full md:w-[35vw] object-contain"
+            onClick={() => setIsOpen(true)}
+            className="w-full md:w-[35vw] object-contain cursor-pointer transition-transform duration-300 hover:scale-105"
           />
         </div>
 
@@ -148,6 +151,57 @@ const Insticollabsection = () => {
           ))}
         </div>
       </section>
+
+      {/* Image Overlay */}
+{isOpen && (
+  <div
+    className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+    onClick={() => setIsOpen(false)}
+  >
+    {/* Top Right Buttons */}
+    <div className="absolute top-5 right-5 flex items-center gap-4">
+      
+      {/* Download Button */}
+      <a
+        href={mainImage}
+        download="MOU-Main-Image"
+        onClick={(e) => e.stopPropagation()}
+        className="bg-white text-black px-4 py-2 rounded-lg font-medium hover:scale-105 transition-transform duration-300"
+      >
+        <img
+    src="https://img.icons8.com/?size=100&id=DDG5gvNvIbge&format=png&color=000000"
+    alt="Download"
+    className="w-7 h-7"
+  />
+      </a>
+
+      {/* Close Button */}
+      <button
+        className="text-white text-2xl font-bold hover:scale-110 transition-transform duration-300"
+        onClick={(e) => {
+          e.stopPropagation();
+          setIsOpen(false);
+        }}
+      >
+        ✕
+      </button>
+    </div>
+
+    {/* Enlarged Image */}
+    <img
+      src={mainImage}
+      alt="MOU Main Enlarged"
+      onClick={(e) => e.stopPropagation()}
+      className="
+        max-w-[95%]
+        max-h-[90vh]
+        object-contain
+        rounded-lg
+        animate-[zoomIn_.35s_ease-out]
+      "
+    />
+  </div>
+)}
 
       <Footer />
     </>
