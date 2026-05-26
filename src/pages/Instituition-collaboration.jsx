@@ -36,6 +36,7 @@ import img27 from "../assets/images/instituition-imgs/KMCT DENTAL COLLEGE AND HO
 import img28 from "../assets/images/instituition-imgs/SUDHA RUSTAGI DENTAL SCIENCES AND RESEARCH, FARIDABAD, HARYANA, INDIA.png"
 import img29 from "../assets/images/instituition-imgs/Subharti Dental College and Hospital, Meerut, India.png"
 import img30 from "../assets/images/instituition-imgs/Sri Ramakrishna Dental College and Hospital, Coimbatore, India.png"
+import img31 from "../assets/images/instituition-imgs/Gandaki Medical College and Hospital, Nepal.png"
 
 
 import Navbar from "../components/Navbar";
@@ -49,7 +50,7 @@ const images = [
   img10, img11, img12,
   img13, img14, img15,
   img16, img17, img18,
-  img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30
+  img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30, img31
 ];
 
 /* ---------------- COLLEGE DATA ---------------- */
@@ -84,6 +85,7 @@ const colleges = [
   { name: "Sudha Rustagi College of Dental Sciences and Research", city: "Faridabad", state:"Haryana, India"},
   { name: "Subharti Dental College and Hospital", state:"Swami Vivekanand Subharti University", additionalInfo: "Meerut, Uttar Pradesh, India"},
   { name: "Sri Ramakrishna Dental College and Hospital", city: "Coimbatore", state:"Tamil Nadu, India"},
+  { name: "Dept. of Orthodontics and Dento-facial Orthopaedics", city: "Gandaki Medical College and Hospital", state:"", additionalInfo: "Pokhara, Nepal"}
 ];
 
 /* ---------------- MERGED DATA ---------------- */

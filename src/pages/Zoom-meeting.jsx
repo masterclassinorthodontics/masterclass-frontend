@@ -98,6 +98,8 @@ export default function ZoomSection() {
       "drprabhakar84@gmail.com":{password: "MUPINS41", link:"https://us06web.zoom.us/j/83397748922?pwd=2kmaEcYnpOvKr5nZTQyDUIVHamTvgW.1"},
 
       "neetunambi@gmail.com":{password: "MUPINS41", link:"https://us06web.zoom.us/j/83397748922?pwd=2kmaEcYnpOvKr5nZTQyDUIVHamTvgW.1"},
+
+      "drumeshparajuli@gmail.com":{password: "MUPINS41", link:"https://us06web.zoom.us/j/83397748922?pwd=2kmaEcYnpOvKr5nZTQyDUIVHamTvgW.1"},
     
     "INST019": { password: "MUPINS19", link: "https://us05web.zoom.us/j/19191919191" },
     "INST020": { password: "MUPINS19", link: "https://us05web.zoom.us/j/20202020202" }
