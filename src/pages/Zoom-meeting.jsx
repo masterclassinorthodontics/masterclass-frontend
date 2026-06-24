@@ -148,7 +148,11 @@ export default function ZoomSection() {
     },
     "drshanortho@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/87838559947?pwd=17AZUkdx35cLy3ychAMQWiyvkSMmdY.1"
+      link:"https://us06web.zoom.us/j/87838559947?pwd=17AZUkdx35cLy3ychAMQWiyvkSMmdY.1",
+    },
+    "prasannapalindla@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/87838559947?pwd=17AZUkdx35cLy3ychAMQWiyvkSMmdY.1",
     },
     "jairaj.vani26@gmail.com":{
       password:"MUPIND3",
