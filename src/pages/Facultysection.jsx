@@ -7,7 +7,8 @@ import nat1 from "../assets/images/Faculty-img.png";
 import nat2 from "../assets/images/faculty-img2.png";
 import nat3 from "../assets/images/faculty-img3.png";
 import nat4 from "../assets/images/faculty-img4.png";
-import nat5 from "../assets/images/faculty-img05.png";
+import nat5 from "../assets/images/faculty-img-06.png";
+import nat6 from "../assets/images/faculty-img-07.png";
 
 // International Faculty Images
 import int1 from "../assets/images/faculty-int-img.png";
@@ -38,7 +39,7 @@ const FacultySection = () => {
       </h2>
 
       {/* National Images */}
-      {[nat1, nat2, nat3, nat4, nat5].map((img, index) => (
+      {[nat1, nat2, nat3, nat4, nat5, nat6].map((img, index) => (
         <div
           key={index}
           className="w-full py-2 md:py-4 lg:py-2 flex items-center justify-center">

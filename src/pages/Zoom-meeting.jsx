@@ -164,6 +164,10 @@ export default function ZoomSection() {
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/89340746659?pwd=oD4rHLyDlNahvrCLNHzjj0BpLUbjCb.1",
     },
+    "buntysinghdeo@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/89340746659?pwd=oD4rHLyDlNahvrCLNHzjj0BpLUbjCb.1",
+    },
     "jairaj.vani26@gmail.com":{
       password:"MUPIND3",
       link:"https://us06web.zoom.us/j/89340746659?pwd=oD4rHLyDlNahvrCLNHzjj0BpLUbjCb.1",
