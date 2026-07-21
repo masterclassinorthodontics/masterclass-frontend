@@ -8,7 +8,7 @@ import nat2 from "../assets/images/faculty-img2.png";
 import nat3 from "../assets/images/faculty-img3.png";
 import nat4 from "../assets/images/faculty-img4.png";
 import nat5 from "../assets/images/faculty-img-06.png";
-import nat6 from "../assets/images/faculty-img-08.png";
+import nat6 from "../assets/images/faculty-img6.png";
 
 // International Faculty Images
 import int1 from "../assets/images/faculty-int-img.png";
