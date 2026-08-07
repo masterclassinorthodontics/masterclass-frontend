@@ -8,11 +8,11 @@ import nat2 from "../assets/images/faculty-img2.png";
 import nat3 from "../assets/images/faculty-img3.png";
 import nat4 from "../assets/images/faculty-img4.png";
 import nat5 from "../assets/images/faculty-img-06.png";
-import nat6 from "../assets/images/faculty-img6.png";
+import nat6 from "../assets/images/faculty-img006.png";
 
 // International Faculty Images
 import int1 from "../assets/images/faculty-int-img.png";
-import int2 from "../assets/images/faculty-int-img-02.png";
+import int2 from "../assets/images/faculty-int-img-002.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -62,7 +62,7 @@ const FacultySection = () => {
       </h2>
 
       {/* International Images */}
-      {[int1, int2].map((img, index) => (
+      {[int1,int2].map((img, index) => (
         <div
           key={index}
           className="w-full py-2 md:py-2 lg:py-2 flex items-center justify-center"
