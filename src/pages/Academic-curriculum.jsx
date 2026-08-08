@@ -19,6 +19,7 @@ import mainImg11 from "../assets/images/Academic-Schedule-for-April-2026.png"
 import mainImg12 from "../assets/images/Academic-Schedule-for-May-2026.png"
 import mainImg13 from "../assets/images/Academic-Schedule-for-June-2026.png"
 import mainImg14 from "../assets/images/Academic-Schedule-for-July-2026.png"
+import mainImg15 from "../assets/images/Academic-Schedule-for-August-2026.png"
 
 // Session images
 import img1 from "../assets/images/SESSION-1-June-2025.png";
@@ -84,6 +85,9 @@ import img48 from "../assets/images/SESSION-2-July-2026.png"
 import img49 from "../assets/images/SESSION-3-July-2026.png"
 import img50 from "../assets/images/SESSION-4-July-2026.png"
 
+import img51 from "../assets/images/SESSION-1-August-2026.png"
+import img52 from "../assets/images/SESSION-2-August-2026.png"
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -101,7 +105,8 @@ const rowsData = [
   { main: mainImg11, images:[img34, img35, img36, img37, img38]},
   { main: mainImg12, images:[img39, img40, img41]},
   { main: mainImg13, images:[img42, img43, img44, img45]},
-  { main: mainImg14, images:[img47, img48, img49, img50]}
+  { main: mainImg14, images:[img47, img48, img49, img50]},
+  { main: mainImg15, images:[img51, img52]}
 ];
 
 const AcademicCurriculumsection = () => {
