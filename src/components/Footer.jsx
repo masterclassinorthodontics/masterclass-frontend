@@ -1,6 +1,8 @@
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/only-logo.png";
+import faq from "../assets/images/faq-bttn.png";
+import blog from "../assets/images/blog-button.png";
 
 export default function Footer() {
   return (
@@ -61,6 +63,11 @@ export default function Footer() {
               </Link>
             </li>
             <li><Link to="/contact" className="hover:underline">Contact</Link></li>
+            <li>
+              <Link to="/faq" className="hover:underline">
+                <img src={faq} className="w-48 h-auto" />
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -95,6 +102,11 @@ export default function Footer() {
                 className="hover:underline"
               >
                 Terms &amp; Conditions
+              </Link>
+            </li>
+            <li>
+              <Link to="/blogs" className="hover:underline">
+                <img src={blog} className="w-48 h-auto" />
               </Link>
             </li>
           </ul>

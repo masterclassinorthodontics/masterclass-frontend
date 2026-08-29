@@ -5,16 +5,14 @@ import logo from "../assets/images/only-logo.png";
 import nav1 from "../assets/images/home-bttn.png";
 import nav2 from "../assets/images/university-bttn.png";
 import nav3 from "../assets/images/masterclass-gallery-bttn.png";
-import nav4 from "../assets/images/faq-bttn.png";
-import nav5 from "../assets/images/blog-button.png";
+import nav4 from "../assets/images/prac-part-bttn.png";
 import nav6 from "../assets/images/contact-bttn.png";
 
 const navItems = [
   { img: nav1, path: "/" },
   { img: nav2, path: "/masterclass-university-program" },
   { img: nav3, path: "/gallery" },
-  { img: nav4, path: "/faq" },
-  { img: nav5, path: "/blogs" },
+  { img: nav4, path: "/spark-participation-form" },
   { img: nav6, path: "/contact" },
 ];
 
