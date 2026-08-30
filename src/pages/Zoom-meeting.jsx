@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar";
-import mainimg from "../assets/images/SESSION-2-August-2026.png"
+import mainimg from "../assets/images/SESSION-1-Sept-2026.png"
 import signbtnimg from "../assets/images/SI-01.png"
 import pagebg from "../assets/images/Zoombg.jpg"
 import Footer from "../components/Footer";
