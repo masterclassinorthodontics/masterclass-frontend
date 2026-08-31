@@ -152,6 +152,14 @@ export default function ZoomSection() {
       password:"MUPIND12",
       link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1"
     },
+    "drpramodbds@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1"
+    },
+    "senarasi@yahoo.co.in":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1"
+    },
     "aabhishek.guptasdc@gmail.com":{
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1",

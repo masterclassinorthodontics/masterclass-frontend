@@ -34,19 +34,23 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Desktop Menu (70%) */}
-      <div className="w-[80%] hidden md:flex justify-end items-center ml-6">
-        {navItems.map((item, i) => (
-          <Link key={i} to={item.path}>
-            <img
-              src={item.img}
-              alt={`nav-${i}`}
-              className="h-full cursor-pointer mix-blend-screen hover:scale-104 transition-transform duration-300"
-              loading="lazy"
-            />
-          </Link>
-        ))}
-      </div>
+      {/* Desktop Menu */}
+<div className="w-[80%] hidden md:flex justify-end items-center ml-6 gap-1">
+  {navItems.map((item, i) => (
+    <Link
+      key={i}
+      to={item.path}
+      className="h-[60px] flex items-center justify-center"
+    >
+      <img
+        src={item.img}
+        alt={`nav-${i}`}
+        className="h-[60px] w-auto object-contain cursor-pointer mix-blend-screen hover:scale-101 transition-transform duration-300"
+        loading="lazy"
+      />
+    </Link>
+  ))}
+</div>
 
       {/* Hamburger */}
       <div
