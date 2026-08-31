@@ -21,6 +21,8 @@ export default function SparkparticipationForm() {
     email: ""
   });
 
+   const [banner3Zoomed, setBanner3Zoomed] = useState(false);
+
 
   const handleChange = (e) => {
 
@@ -102,39 +104,63 @@ export default function SparkparticipationForm() {
 
       {/* Full Width Images */}
 
-<div className="w-full flex items-center pt-[6%]">
+<div
+  className="w-full px-[8%] pt-[35%] lg:pt-[20%] xl:pt-[10%]"
+   onClick={() => setBanner3Zoomed(false)}
+  style={{
+    backgroundImage: `linear-gradient(
+      rgba(255,255,255,0.78),
+      rgba(255,255,255,0.78)
+    ), url(${gridBg})`,
+    backgroundSize: "contain",
+  }}
+>
   
-  <div className="w-1/2 flex justify-center">
-    <img
-      src={banner1}
-      alt=""
-      className="w-full h-auto block object-contain"
-      loading="lazy"
-    />
+  {/* First two images side by side */}
+  <div className="w-full flex gap-[2%]">
+
+    <div className="w-1/2 flex justify-center">
+      <img
+        src={banner1}
+        alt=""
+        className="w-full h-auto block"
+        loading="lazy"
+      />
+    </div>
+
+    <div className="w-1/2 flex justify-center">
+      <img
+        src={banner2}
+        alt=""
+        className="w-full h-auto block"
+        loading="lazy"
+      />
+    </div>
+
   </div>
 
-  <div className="w-1/2 flex justify-center">
-    <img
-      src={banner2}
-      alt=""
-      className="w-full h-auto block object-contain"
-      loading="lazy"
-    />
-  </div>
 
-</div>
-
-<img
+  {/* Third image */}
+  <img
   src={banner3}
   alt=""
-  className="w-full h-auto block"
+  onClick={(e) => {
+    e.stopPropagation();
+    setBanner3Zoomed(true);
+  }}
+  className={`w-full h-auto block mt-[2%] cursor-pointer transition-transform duration-300 ${
+    banner3Zoomed ? "scale-120 lg:scale-100" : "scale-100"
+  }`}
   loading="lazy"
 />
+
+</div>
 
 
 
       <section
         className="min-h-screen bg-gray-100 px-6 py-[1%] lg:py-[1%]"
+         onClick={() => setBanner3Zoomed(false)}
         style={{
           backgroundImage: `linear-gradient(
             rgba(255,255,255,0.78),
