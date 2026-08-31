@@ -3,6 +3,9 @@ import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar";
 import gridBg from "../assets/images/from-bg.png";
 import submitbtn from "../assets/images/submit-participation-form.png";
+import banner1 from "../assets/images/Spark-banner-img1.png";
+import banner2 from "../assets/images/Spark-banner-img2.png";
+import banner3 from "../assets/images/Spark-banner-img3.png";
 
 
 const PHP_API_BASE_URL = import.meta.env.VITE_PHP_API_BASE_URL;
@@ -97,9 +100,41 @@ export default function SparkparticipationForm() {
 
       <Navbar />
 
+      {/* Full Width Images */}
+
+<div className="w-full flex items-center pt-[6%]">
+  
+  <div className="w-1/2 flex justify-center">
+    <img
+      src={banner1}
+      alt=""
+      className="w-full h-auto block object-contain"
+      loading="lazy"
+    />
+  </div>
+
+  <div className="w-1/2 flex justify-center">
+    <img
+      src={banner2}
+      alt=""
+      className="w-full h-auto block object-contain"
+      loading="lazy"
+    />
+  </div>
+
+</div>
+
+<img
+  src={banner3}
+  alt=""
+  className="w-full h-auto block"
+  loading="lazy"
+/>
+
+
 
       <section
-        className="min-h-screen bg-gray-100 px-6 py-[40%] lg:py-[10%]"
+        className="min-h-screen bg-gray-100 px-6 py-[1%] lg:py-[1%]"
         style={{
           backgroundImage: `linear-gradient(
             rgba(255,255,255,0.78),
