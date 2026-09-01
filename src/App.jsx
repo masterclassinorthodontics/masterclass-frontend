@@ -57,6 +57,7 @@ const Subscriptiontwelve = lazy(()=>import('./pages/Subscription-twelvemonth'))
 const Masterclassaward = lazy(()=> import('./pages/Masterclass-Awards'))
 const Paymentsuccess = lazy(()=>import('./pages/Payment-sucess'))
 const SparkparticipationForm = lazy(()=>import('./pages/Sparkparticipation-form'))
+const Sparkthanks = lazy(()=>import('./pages/Spark-thanks'))
 
 function App() {
   const [count, setCount] = useState(0)
@@ -109,6 +110,7 @@ function App() {
           <Route path='/masterclass-awards' element={<Masterclassaward/>}/>
           <Route path='/payment-success' element={<Paymentsuccess/>}/>
           <Route path='/spark-participation-form' element={<SparkparticipationForm/>}/>
+          <Route path='/spark-thanks' element={<Sparkthanks/>}/>
         </Routes>
       </Suspense>
     </div>

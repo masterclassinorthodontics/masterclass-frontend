@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import gridBg from "../assets/images/from-bg.png";
 import submitbtn from "../assets/images/submit-participation-form.png";
@@ -12,6 +13,8 @@ const PHP_API_BASE_URL = import.meta.env.VITE_PHP_API_BASE_URL;
 
 
 export default function SparkparticipationForm() {
+
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     orthodontistName: "",
@@ -59,7 +62,7 @@ export default function SparkparticipationForm() {
 
       if (data.success) {
 
-        alert("Form Submitted Successfully!");
+        navigate("/spark-thanks");
 
         setFormData({
           orthodontistName: "",
