@@ -1,6 +1,6 @@
 import gridBg from "../assets/images/from-bg.png";
 import Navbar from "../components/Navbar";
-import banner1 from "../assets/images/WEBSITE ACKNOWLEGMENT.png";
+import banner1 from "../assets/images/Thank-you-img.png";
 
 export default function SparkSuccess() {
   return (
