@@ -152,6 +152,42 @@ export default function ZoomSection() {
       password:"MUPIND12",
       link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1"
     },
+    "drshettyortho@gmail.com":{
+      password:"MUPIND12",
+      link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1",
+    },
+    "drarunnayak@yahoo.com":{
+      password:"MUPIND12",
+      link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1"
+    },
+    "asmarajan62@gmail.com":{
+      password:"MUPIND12",
+      link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1"
+    },
+    "krutikagaitonde31@gmail.com":{
+      password:"MUPIND12",
+      link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1",
+    },
+    "shana90@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1"
+    },
+    "drneerajrmehta@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1",
+    },
+    "drshafeeq89@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1"
+    },
+    "draamod_karandikar@yahoo.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1",
+    },
+    "prasannapalindla@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1"
+    },
     "drpramodbds@gmail.com":{
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/89738017626?pwd=RJEJlsuvW7RfG3P2m5TYtWUUgeXUre.1"

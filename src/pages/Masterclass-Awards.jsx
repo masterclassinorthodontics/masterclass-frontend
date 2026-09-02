@@ -28,7 +28,7 @@ const masterclassaward = () => {
       <title>MASTERCLASS AWARDS - Masterclass in Orthodontics</title>
     </Helmet>
     <Navbar/>
-    <section className="py-32 px-4"
+    <section className="py-48 px-4"
     style={{
                 backgroundImage:`linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),url(${bg})`
             }}  
