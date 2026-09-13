@@ -164,6 +164,14 @@ export default function ZoomSection() {
       password:"MUPIND12",
       link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
     },
+    "nikhilmalviya@gmail.com":{
+      password:"MUPIND12",
+      link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
+    },
+    "dr.sharatrajan@gmail.com":{
+      password:"MUPIND12",
+      link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
+    },
     "shana90@gmail.com":{
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1"
@@ -196,10 +204,6 @@ export default function ZoomSection() {
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
     },
-    "draamod_karandikar@yahoo.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
-    },
     "ankitshahi270@gmail.com":{
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
@@ -212,11 +216,19 @@ export default function ZoomSection() {
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
     },
+    "Tanud3@gmail.com":{
+      password:"MUPIND3",
+      link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
+    },
     "sija.a.j@gmail.com":{
       password:"MUPIND3",
       link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
     },
     "devanshiyadav@gmail.com":{
+      password:"MUPIND3",
+      link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
+    },
+    "daakshudas@gmail.com":{
       password:"MUPIND3",
       link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
     },
