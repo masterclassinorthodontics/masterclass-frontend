@@ -217,7 +217,7 @@ export default function ZoomSection() {
       link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
     },
     "Tanud3@gmail.com":{
-      password:"MUPIND3",
+      password:"MUPIND1",
       link:"https://us06web.zoom.us/j/85303029847?pwd=oWl8RaquUckHGHZoQdiFItb4Je3DVt.1",
     },
     "sija.a.j@gmail.com":{
