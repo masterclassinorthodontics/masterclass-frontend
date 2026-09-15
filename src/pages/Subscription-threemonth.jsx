@@ -284,7 +284,7 @@ const subscriptionthreemonth = () =>{
               <img
                 src={submitBtn}
                 alt="Submit"
-                className="w-1/2 hover:scale-105 transition"
+                className="w-full md:w-1/2 hover:scale-105 transition"
                 loading="lazy"
               />
             </button>

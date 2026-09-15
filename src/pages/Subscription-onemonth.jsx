@@ -231,7 +231,7 @@ const subscriptiononemonth = () => {
             <img
               src={submitBtn}
               alt="Submit"
-              className={`w-1/2 transition ${
+              className={`w-full md:w-1/2 transition ${
                 loading ? "opacity-50" : "hover:scale-105"
               }`}
               loading="lazy"
