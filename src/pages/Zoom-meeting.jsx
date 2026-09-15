@@ -333,136 +333,144 @@ export default function ZoomSection() {
         backgroundImage:`linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),url(${pagebg})`,
     }}
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center px-[18vw]">
-        {/* ================= LEFT IMAGE ================= */}
-        <div className="flex justify-center">
-          <img
-            src={mainimg}
-            alt="Login Visual"
-            className="max-w-xl w-full rounded-xl shadow-lg"
-            loading="lazy"
-          />
-        </div>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch px-[18vw]">
 
-        {/* ================= RIGHT FORMS ================= */}
-        <div className="flex flex-col items-end gap-[90px] max-w-[380px] ml-auto">
-          {/* ========== INSTITUTIONAL LOGIN ========== */}
-          <div className="bg-white p-10 rounded-[35px] shadow-md w-[110%] text-center transition hover:-translate-y-1 hover:shadow-xl">
-            <h3 className="text-sm font-semibold mb-4">
-              Institutional Login
-            </h3>
+  {/* ================= LEFT IMAGE ================= */}
+  <div className="flex justify-center">
+    <img
+      src={mainimg}
+      alt="Login Visual"
+      className="max-w-xl w-full rounded-xl shadow-lg object-contain"
+      loading="lazy"
+    />
+  </div>
 
-            <input
-              type="text"
-              placeholder="Enter User ID"
-              className="w-full px-4 py-2 mb-4 border rounded-full text-center focus:outline-none focus:border-black"
-              onChange={(e) =>
-                setInstitutional({
-                  ...institutional,
-                  userId: e.target.value,
-                })
-              }
-            />
+  {/* ================= RIGHT FORMS ================= */}
+  <div className="flex flex-col justify-between items-end max-w-[380px] ml-auto h-full gap-16 min-[1000px]:gap-0 min-[1000px]:scale-y-[0.92] min-[1000px]:origin-center">
 
-            <div className="relative mb-4">
-              <input
-                type={showPassword.institutional ? "text" : "password"}
-                placeholder="Enter Password"
-                className="w-full px-4 py-2 border rounded-full text-center focus:outline-none focus:border-black"
-                onChange={(e) =>
-                  setInstitutional({
-                    ...institutional,
-                    password: e.target.value,
-                  })
-                }
-              />
-              <span
-                className="absolute right-4 top-2 cursor-pointer"
-                onClick={() =>
-                  setShowPassword((s) => ({
-                    ...s,
-                    institutional: !s.institutional,
-                  }))
-                }
-              >
-                {showPassword.institutional ? "🙈" : "👁️"}
-              </span>
-            </div>
+    {/* ========== INSTITUTIONAL LOGIN ========== */}
+    <div className="bg-white p-10 rounded-[35px] shadow-md w-[110%] text-center transition hover:-translate-y-1 hover:shadow-xl">
 
-            <img
-              src={signbtnimg}
-              alt="Login"
-              className="w-full h-[65px] rounded-full cursor-pointer hover:scale-105 transition"
-              onClick={handleInstitutionalLogin}
-              loading="lazy"
-            />
+      <h3 className="text-sm font-semibold mb-4">
+        Institutional Login
+      </h3>
 
-            {errors.institutional && (
-              <p className="text-red-500 text-xs mt-2">
-                Incorrect User ID or Password
-              </p>
-            )}
-          </div>
+      <input
+        type="text"
+        placeholder="Enter User ID"
+        className="w-full px-4 py-2 mb-4 border rounded-full text-center focus:outline-none focus:border-black"
+        onChange={(e) =>
+          setInstitutional({
+            ...institutional,
+            userId: e.target.value,
+          })
+        }
+      />
 
-          {/* ========== INDIVIDUAL LOGIN ========== */}
-          <div className="bg-white p-10 rounded-[35px] shadow-md w-[110%] text-center transition hover:-translate-y-1 hover:shadow-xl">
-            <h3 className="text-sm font-semibold mb-4">
-              Individual Login
-            </h3>
+      <div className="relative mb-4">
+        <input
+          type={showPassword.institutional ? "text" : "password"}
+          placeholder="Enter Password"
+          className="w-full px-4 py-2 border rounded-full text-center focus:outline-none focus:border-black"
+          onChange={(e) =>
+            setInstitutional({
+              ...institutional,
+              password: e.target.value,
+            })
+          }
+        />
 
-            <input
-              type="text"
-              placeholder="Enter User ID"
-              className="w-full px-4 py-2 mb-4 border rounded-full text-center focus:outline-none focus:border-black"
-              onChange={(e) =>
-                setIndividual({
-                  ...individual,
-                  userId: e.target.value,
-                })
-              }
-            />
-
-            <div className="relative mb-4">
-              <input
-                type={showPassword.individual ? "text" : "password"}
-                placeholder="Enter Password"
-                className="w-full px-4 py-2 border rounded-full text-center focus:outline-none focus:border-black"
-                onChange={(e) =>
-                  setIndividual({
-                    ...individual,
-                    password: e.target.value,
-                  })
-                }
-              />
-              <span
-                className="absolute right-4 top-2 cursor-pointer"
-                onClick={() =>
-                  setShowPassword((s) => ({
-                    ...s,
-                    individual: !s.individual,
-                  }))
-                }
-              >
-                {showPassword.individual ? "🙈" : "👁️"}
-              </span>
-            </div>
-
-            <img
-              src={signbtnimg}
-              alt="Login"
-              className="w-full h-[65px] rounded-full cursor-pointer hover:scale-105 transition"
-              onClick={handleIndividualLogin}
-              loading="lazy"
-            />
-
-            {errors.individual && (
-              <p className="text-red-500 text-xs mt-2">
-                Incorrect User ID or Password
-              </p>
-            )}
-          </div>
-        </div>
+        <span
+          className="absolute right-4 top-2 cursor-pointer"
+          onClick={() =>
+            setShowPassword((s) => ({
+              ...s,
+              institutional: !s.institutional,
+            }))
+          }
+        >
+          {showPassword.institutional ? "🙈" : "👁️"}
+        </span>
       </div>
+
+      <img
+        src={signbtnimg}
+        alt="Login"
+        className="w-full h-[65px] rounded-full cursor-pointer hover:scale-105 transition"
+        onClick={handleInstitutionalLogin}
+        loading="lazy"
+      />
+
+      {errors.institutional && (
+        <p className="text-red-500 text-xs mt-2">
+          Incorrect User ID or Password
+        </p>
+      )}
+    </div>
+
+
+    {/* ========== INDIVIDUAL LOGIN ========== */}
+    <div className="bg-white p-10 rounded-[35px] shadow-md w-[110%] text-center transition hover:-translate-y-1 hover:shadow-xl">
+
+      <h3 className="text-sm font-semibold mb-4">
+        Individual Login
+      </h3>
+
+      <input
+        type="text"
+        placeholder="Enter User ID"
+        className="w-full px-4 py-2 mb-4 border rounded-full text-center focus:outline-none focus:border-black"
+        onChange={(e) =>
+          setIndividual({
+            ...individual,
+            userId: e.target.value,
+          })
+        }
+      />
+
+      <div className="relative mb-4">
+        <input
+          type={showPassword.individual ? "text" : "password"}
+          placeholder="Enter Password"
+          className="w-full px-4 py-2 border rounded-full text-center focus:outline-none focus:border-black"
+          onChange={(e) =>
+            setIndividual({
+              ...individual,
+              password: e.target.value,
+            })
+          }
+        />
+
+        <span
+          className="absolute right-4 top-2 cursor-pointer"
+          onClick={() =>
+            setShowPassword((s) => ({
+              ...s,
+              individual: !s.individual,
+            }))
+          }
+        >
+          {showPassword.individual ? "🙈" : "👁️"}
+        </span>
+      </div>
+
+      <img
+        src={signbtnimg}
+        alt="Login"
+        className="w-full h-[65px] rounded-full cursor-pointer hover:scale-105 transition"
+        onClick={handleIndividualLogin}
+        loading="lazy"
+      />
+
+      {errors.individual && (
+        <p className="text-red-500 text-xs mt-2">
+          Incorrect User ID or Password
+        </p>
+      )}
+    </div>
+
+  </div>
+</div>
     </section>
     <Footer/>
     </>
