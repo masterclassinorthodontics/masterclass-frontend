@@ -21,6 +21,7 @@ import mainImg13 from "../assets/images/Academic-Schedule-for-June-2026.png"
 import mainImg14 from "../assets/images/Academic-Schedule-for-July-2026.png"
 import mainImg15 from "../assets/images/Academic-Schedule-for-August-2026.png"
 import mainImg16 from "../assets/images/Academic-Schedule-for-Sept-2026.png"
+import mainImg17 from "../assets/images/Academic-Schedule-for-Oct-2026.png"
 
 // Session images
 import img1 from "../assets/images/SESSION-1-June-2025.png";
@@ -94,6 +95,10 @@ import img54 from "../assets/images/SESSION-2-Sept-2026.png"
 import img55 from "../assets/images/SESSION-3-Sept-2026.png"
 import img56 from "../assets/images/SESSION-4-Sept-2026.png"
 
+import img57 from "../assets/images/SESSION-1-Oct-2026.png"
+import img58 from "../assets/images/SESSION-2-Oct-2026.png"
+import img59 from "../assets/images/SESSION-3-Oct-2026.png"
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -114,6 +119,7 @@ const rowsData = [
   { main: mainImg14, images:[img47, img48, img49, img50]},
   { main: mainImg15, images:[img51, img52]},
   { main: mainImg16, images: [img53, img54, img55, img56] },
+  { main: mainImg17, images: [img57, img58, img59] }
 ];
 
 const AcademicCurriculumsection = () => {
