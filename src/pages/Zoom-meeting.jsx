@@ -102,6 +102,8 @@ export default function ZoomSection() {
       "drumeshparajuli@gmail.com":{password: "MUPINS56", link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1"},
 
       "21.hegde@gmail.com":{password: "MUPINS56", link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1"},
+
+      "orthodontics@svdcpondy.ac.in":{password: "MUPINS56", link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1"},
     
     "INST019": { password: "MUPINS19", link: "https://us05web.zoom.us/j/19191919191" },
     "INST020": { password: "MUPINS19", link: "https://us05web.zoom.us/j/20202020202" }
@@ -216,11 +218,39 @@ export default function ZoomSection() {
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
     },
-    "Tanud3@gmail.com":{
+    "tanud3@gmail.com":{
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
     },
     "almas0280@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
+    },
+    "doctorpartha@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
+    },
+    "aivinkc4@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
+    },
+    "orthodontistshahid@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
+    },
+    "doclohiya@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
+    },
+    "dr.jaineel@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
+    },
+    "divya.raniwala@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
+    },
+    "kpkr823@gmail.com":{
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
     },
