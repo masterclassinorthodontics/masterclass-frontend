@@ -254,6 +254,10 @@ export default function ZoomSection() {
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
     },
+    "drsharonabraham@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
+    },
     "sija.a.j@gmail.com":{
       password:"MUPIND3",
       link:"https://us06web.zoom.us/j/83645246207?pwd=zaxpSt7NEw7dEVA5vaVwlNMeClwwDn.1",
