@@ -4,6 +4,7 @@ import submitbtn from "../assets/images/Submit-Faculty-btn.png";
 import gridBg from "../assets/images/from-bg.png";
 import termsPdf from "../assets/files/Term-and-condition-faculty.pdf";
 import Navbar from "../components/Navbar";
+import { useState } from "react";
 
 /* ---------------- API BASE ---------------- */
 const PHP_API_BASE_URL = import.meta.env.VITE_PHP_API_BASE_URL;
@@ -54,35 +55,42 @@ const LabelInput = ({ label, name, type = "text", required = true }) => (
 
 export default function MasterclassFaculty() {
 
+  const [loading, setLoading] = useState(false);
   /* ---------------- SUBMIT ---------------- */
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const form = e.target;
-    const formData = new FormData(form); // collects all inputs + files
+  if (loading) return;
 
-    try {
-      const response = await fetch(
-        `${PHP_API_BASE_URL}/faculty-enrollment.php`,
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
+  setLoading(true);
 
-      const data = await response.json();
+  const form = e.target;
+  const formData = new FormData(form);
 
-      if (data.success) {
-        alert("Application Submitted Successfully");
-        form.reset();
-      } else {
-        alert(data.message || "Something went wrong");
+  try {
+    const response = await fetch(
+      `${PHP_API_BASE_URL}/faculty-enrollment.php`,
+      {
+        method: "POST",
+        body: formData,
       }
-    } catch (err) {
-      console.error(err);
-      alert("Network error");
+    );
+
+    const data = await response.json();
+
+    if (data.success) {
+      alert("Application Submitted Successfully");
+      form.reset();
+    } else {
+      alert(data.message || "Something went wrong");
     }
-  };
+  } catch (err) {
+    console.error(err);
+    alert("Network error");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <>
@@ -201,9 +209,25 @@ export default function MasterclassFaculty() {
             </span>
           </label>
 
-          <button type="submit">
-            <img src={submitbtn} className="lg:w-[30vw] sm:w-[60vw]" loading="lazy" />
-          </button>
+          {/* Submit Button */}
+<div className="flex items-center gap-4 pt-8">
+  <button
+    type="submit"
+    disabled={loading}
+    className="disabled:opacity-60"
+  >
+    <img
+      src={submitbtn}
+      alt="Submit Faculty Form"
+      className="w-full md:w-[30vw] cursor-pointer"
+      loading="lazy"
+    />
+  </button>
+
+  {loading && (
+    <div className="w-6 h-6 shrink-0 border-3 border-gray-300 border-t-[#000] rounded-full animate-spin"></div>
+  )}
+</div>
 
         </form>
       </section>

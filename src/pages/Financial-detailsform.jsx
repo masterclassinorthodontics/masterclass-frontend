@@ -203,29 +203,44 @@ const LabelInput = ({
 );
 
 export default function FinancialdetailForm() {
+  const [loading, setLoading] = useState(false);
 
 const handleSubmit = async (e) => {
   e.preventDefault();
+
+  if (loading) return;
+
   const form = e.target;
-  const formData = new FormData(form); // IMPORTANT: FormData from the form
+  const formData = new FormData(form);
+
+  setLoading(true);
 
   try {
-    const res = await fetch(`${PHP_API_BASE_URL}/faculty-financial-details.php`, {
-      method: "POST",
-      body: formData, // multipart/form-data automatically set
-    });
+    const res = await fetch(
+      `${PHP_API_BASE_URL}/faculty-financial-details.php`,
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    if (!res.ok) {
+      throw new Error("Server error");
+    }
 
     const data = await res.json();
 
     if (data.success) {
       alert("Form Submitted Successfully");
-      form.reset(); // reset all fields
+      form.reset();
     } else {
       alert(data.message || "Submission failed");
     }
   } catch (err) {
     console.error(err);
     alert("Network error");
+  } finally {
+    setLoading(false);
   }
 };
 
@@ -422,15 +437,25 @@ const handleSubmit = async (e) => {
 
           {/* ================= SUBMIT BUTTON ================= */}
 
-          <div className="text-start pt-8">
-            <button type="submit">
-              <img
-                src={submitenrolbtn}
-                alt="Submit Enrollment Form"
-                className="mx-auto w-[30vw] cursor-pointer"
-              />
-            </button>
-          </div>
+<div className="flex items-center gap-4 pt-8">
+  <button
+    type="submit"
+    disabled={loading}
+    className={`w-full md:w-auto ${
+      loading ? "opacity-50 cursor-not-allowed" : ""
+    }`}
+  >
+    <img
+      src={submitenrolbtn}
+      alt="Submit Enrollment Form"
+      className="w-full md:w-[30vw] cursor-pointer hover:scale-105 transition"
+    />
+  </button>
+
+  {loading && (
+    <div className="w-6 h-6 shrink-0 border-3 border-gray-300 border-t-[#000] rounded-full animate-spin"></div>
+  )}
+</div>
         </form>
       </section>
     </>

@@ -26,34 +26,41 @@ const LabelInput = ({ label, name, required = true, type = "text", value, onChan
 
 export default function EnrollmentForm() {
   const [formData, setFormData] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    try {
-      const response = await fetch(`${PHP_API_BASE_URL}/enrollment-institutional.php`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+  if (loading) return;
 
-      const data = await response.json();
+  setLoading(true);
 
-      if (data.success) {
-        alert("Form Submitted Successfully!");
-        setFormData({}); // Reset form
-      } else {
-        alert("Error submitting form: " + (data.message || "Unknown error"));
-      }
-    } catch (err) {
-      console.error(err);
-      alert("Network error, please try again later");
+  try {
+    const response = await fetch(`${PHP_API_BASE_URL}/enrollment-institutional.php`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      alert("Form Submitted Successfully!");
+      setFormData({});
+    } else {
+      alert("Error submitting form: " + (data.message || "Unknown error"));
     }
-  };
+  } catch (err) {
+    console.error(err);
+    alert("Network error, please try again later");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <>
@@ -205,11 +212,20 @@ export default function EnrollmentForm() {
           </div>
 
           {/* Submit Button */}
-          <div className="text-start pt-8">
-            <button type="submit">
-              <img src={submitenrolbtn} alt="Submit Enrollment Form" className="mx-auto w-[30vw] cursor-pointer" loading="lazy" />
-            </button>
-          </div>
+<div className="flex items-center gap-4 pt-8">
+  <button type="submit" disabled={loading} className="disabled:opacity-10">
+    <img
+      src={submitenrolbtn}
+      alt="Submit Enrollment Form"
+      className="w-full md:w-[30vw] cursor-pointer"
+      loading="lazy"
+    />
+  </button>
+
+  {loading && (
+    <div className="w-8 h-8 border-3 border-gray-300 border-t-[#000] rounded-full animate-spin"></div>
+  )}
+</div>
         </form>
       </section>
       <Footer/>

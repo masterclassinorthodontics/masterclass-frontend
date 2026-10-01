@@ -19,6 +19,7 @@ const generateCaptcha = () => {
 
 export default function ContactpageSection() {
   const [captcha, setCaptcha] = useState("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setCaptcha(generateCaptcha());
@@ -27,8 +28,11 @@ export default function ContactpageSection() {
 
   const handleSubmit = async (e) => {
   e.preventDefault();
+
   const form = e.target;
-  const formData = new FormData(form); // captures all input values
+  const formData = new FormData(form);
+
+  setLoading(true);
 
   try {
     const res = await fetch(`${PHP_API_BASE_URL}/contact-form.php`, {
@@ -36,18 +40,20 @@ export default function ContactpageSection() {
       body: formData,
     });
 
-    const data = await res.json(); // parse JSON response
+    const data = await res.json();
 
     if (data.success) {
       alert("Form submitted successfully!");
       form.reset();
-      setCaptcha(generateCaptcha()); // regenerate captcha
+      setCaptcha(generateCaptcha());
     } else {
       alert(data.message || "Submission failed");
     }
   } catch (err) {
     console.error(err);
     alert("Network error");
+  } finally {
+    setLoading(false);
   }
 };
 
@@ -247,21 +253,31 @@ export default function ContactpageSection() {
                     </span>
                 </div>
                 <button
-                  type="submit"
-                  className="
-                    mt-6
-                    px-10 py-3
-                    border-4 border-black
-                    rounded-xl
-                    font-semibold
-                    bg-transparent
-                    cursor-pointer
-                    transition
-                    hover:shadow-xl
-                  "
-                >
-                  SEND US
-                </button>
+  type="submit"
+  disabled={loading}
+  className="
+    mt-6
+    px-24 md:px-10 py-3
+    border-4 border-black
+    rounded-xl
+    font-semibold
+    bg-transparent
+    cursor-pointer
+    transition
+    hover:shadow-xl
+    disabled:opacity-60
+    disabled:cursor-not-allowed
+  "
+>
+  {loading ? (
+    <span className="flex items-center justify-center gap-3">
+      <span className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin"></span>
+      SENDING...
+    </span>
+  ) : (
+    "SEND US"
+  )}
+</button>
               </form>
             </div>
 

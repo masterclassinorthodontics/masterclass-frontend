@@ -11,45 +11,47 @@ const PHP_API_BASE_URL = import.meta.env.VITE_PHP_API_BASE_URL;
 
 export default function TradeForm() {
   const [accepted, setAccepted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (!accepted) {
-      alert("Please accept the terms and conditions");
-      return;
+  if (!accepted || loading) return;
+
+  setLoading(true);
+
+  const formData = new FormData(e.target);
+  formData.append("terms_accepted", "1");
+
+  try {
+    const res = await fetch(
+      `${PHP_API_BASE_URL}/trade-enrollment.php`,
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    if (!res.ok) {
+      throw new Error("Server error");
     }
 
-    const formData = new FormData(e.target);
-    formData.append("terms_accepted", "1");
+    const data = await res.json();
 
-    try {
-      const res = await fetch(
-        `${PHP_API_BASE_URL}/trade-enrollment.php`,
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
-
-      if (!res.ok) {
-        throw new Error("Server error");
-      }
-
-      const data = await res.json();
-
-      if (data.success) {
-        alert("Registration submitted successfully");
-        e.target.reset();
-        setAccepted(false);
-      } else {
-        alert(data.message || "Submission failed");
-      }
-    } catch (err) {
-      console.error(err);
-      alert("Network error");
+    if (data.success) {
+      alert("Registration submitted successfully");
+      e.target.reset();
+      setAccepted(false);
+    } else {
+      alert(data.message || "Submission failed");
     }
-  };
+  } catch (err) {
+    console.error(err);
+    alert("Network error");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <>
@@ -246,19 +248,25 @@ export default function TradeForm() {
             </div>
 
             {/* Submit Button */}
-            <div className="flex justify-start">
-              <button
-                type="submit"
-                disabled={!accepted}
-                className={`${accepted ? "" : "opacity-50 cursor-not-allowed"}`}
-              >
-                <img
-                  src={submitbtn}
-                  alt="Submit Registration"
-                  className="w-1/2 cursor-pointer hover:scale-105 transition"
-                />
-              </button>
-            </div>
+<div className="flex items-center gap-4">
+  <button
+    type="submit"
+    disabled={!accepted || loading}
+    className={`w-full md:w-auto ${
+      accepted && !loading ? "" : "opacity-50 cursor-not-allowed"
+    }`}
+  >
+    <img
+      src={submitbtn}
+      alt="Submit Registration"
+      className="w-full md:w-[30vw] cursor-pointer hover:scale-105 transition"
+    />
+  </button>
+
+  {loading && (
+    <div className="w-6 h-6 shrink-0 border-3 border-gray-300 border-t-[#000] rounded-full animate-spin"></div>
+  )}
+</div>
 
           </form>
           {/* FORM END */}
