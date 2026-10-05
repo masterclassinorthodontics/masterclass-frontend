@@ -110,10 +110,6 @@ export default function ZoomSection() {
   };
 
   const individualUsers = {
-    "drpritammohanty@gmail.com": {
-      password: "MUPIND57",
-      link: "https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
-    },
     "dr.parameswaran.tm@gmail.com": {
       password: "MUPIND57",
       link: "https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
@@ -182,42 +178,6 @@ export default function ZoomSection() {
       password:"MUPIND12",
       link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
     },
-    "shana90@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1"
-    },
-    "drneerajrmehta@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
-    },
-    "drshafeeq89@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1"
-    },
-    "draamod_karandikar@yahoo.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
-    },
-    "prasannapalindla@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1"
-    },
-    "drpramodbds@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1"
-    },
-    "senarasi@yahoo.co.in":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1"
-    },
-    "aabhishek.guptasdc@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
-    },
-    "ankitshahi270@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
-    },
     "ajma.aishaali@gmail.com":{
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
@@ -275,6 +235,10 @@ export default function ZoomSection() {
       link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
     },
     "dr.rishikeshsukumaran@gmail.com":{
+      password:"MUPIND1",
+      link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
+    },
+    "bankeralka@yahoo.com":{
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
     },
