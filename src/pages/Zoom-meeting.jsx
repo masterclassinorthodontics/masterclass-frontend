@@ -178,6 +178,10 @@ export default function ZoomSection() {
       password:"MUPIND12",
       link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
     },
+    "dr.utkarshgandhi@gmail.com":{
+      password:"MUPIND12",
+      link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
+    },
     "ajma.aishaali@gmail.com":{
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/85731661836?pwd=ntT6iDa9uBRLeMUJXbGRdRab1F21Nw.1",
