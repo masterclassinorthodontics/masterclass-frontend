@@ -186,18 +186,6 @@ export default function ZoomSection() {
       password:"MUPIND12",
       link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
     },
-    "ajma.aishaali@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
-    },
-    "drgeethamds@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
-    },
-    "tanud3@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
-    },
     "almas0280@gmail.com":{
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
@@ -254,11 +242,11 @@ export default function ZoomSection() {
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
     },
-    "sija.a.j@gmail.com":{
-      password:"MUPIND3",
+    "ajma.aishaali@gmail.com":{
+      password:"MUPIND1",
       link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
     },
-    "devanshiyadav@gmail.com":{
+    "sija.a.j@gmail.com":{
       password:"MUPIND3",
       link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
     },
