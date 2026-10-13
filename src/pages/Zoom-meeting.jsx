@@ -254,7 +254,11 @@ export default function ZoomSection() {
       password:"MUPIND3",
       link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
     },
-    RUPAM: {
+    "devanshiyadav@gmail.com":{
+      password:"MUPIND6",
+      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+    },
+    "RUPAM": {
       password: "RUPAM",
       link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
     },
