@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar";
-import mainimg from "../assets/images/SESSION-2-Oct-2026.png"
+import mainimg from "../assets/images/SESSION-3-Oct-2026.png"
 import signbtnimg from "../assets/images/SI-01.png"
 import pagebg from "../assets/images/Zoombg.jpg"
 import Footer from "../components/Footer";
@@ -35,288 +35,280 @@ export default function ZoomSection() {
       link: "https://us06web.zoom.us/j/83092026577",
     },
     "ortho@mrids.edu.in": {
-      password: "MUPINS58",
-      link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      password: "MUPINS59",
+      link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
-    "orthodontics@svdentalcollege.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "orthodontics@svdentalcollege.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "drbejoy@macity.edu.in": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "drbejoy@macity.edu.in": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "orthohod@mrdcw.edu.in": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "orthohod@mrdcw.edu.in": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "orthodonticssbbdc@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "orthodonticssbbdc@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "ortho@sbdch.ac.in": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "ortho@sbdch.ac.in": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "manishbajracharya@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "manishbajracharya@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "amitabhkallury@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "amitabhkallury@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "mardcortho@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "mardcortho@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "abraham2022.r@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "abraham2022.r@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "drprasad@albadardentalcollege.org": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "drprasad@albadardentalcollege.org": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "ternaorthodontics@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "ternaorthodontics@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "maniar09@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "maniar09@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "teamorthosmilesculptors.ndch@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "teamorthosmilesculptors.ndch@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "orthodonticsrddcrc@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "orthodonticsrddcrc@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "muraliksdh@yahoo.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "muraliksdh@yahoo.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-    "orthvasu@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+    "orthvasu@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
     
-      "orthosuryakantadas@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" }, 
+      "orthosuryakantadas@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" }, 
       
-      "laxmikanthsm2@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+      "laxmikanthsm2@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
       
-      "atportho@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+      "atportho@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
       
-      "sbdcprincipal@gmail.com": { password: "MUPINS58", link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1" },
+      "sbdcprincipal@gmail.com": { password: "MUPINS59", link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1" },
       
-      "hod.orthod.ktr.dental@srmist.edu.in":{ password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      "hod.orthod.ktr.dental@srmist.edu.in":{ password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
       },
 
-      "drpani99@gmail.com":{ password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "drpani99@gmail.com":{ password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
 
-      "pritammohanty@soa.ac.in":{ password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "pritammohanty@soa.ac.in":{ password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
 
-      "hod.orthodontics@djdentalcollege.com":{password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "hod.orthodontics@djdentalcollege.com":{password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
 
-      "drnagmode77@gmail.com":{password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "drnagmode77@gmail.com":{password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
 
-      "drbinuortho@gmail.com":{password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "drbinuortho@gmail.com":{password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
 
-      "drgurkeeratsingh@gmail.com":{password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "drgurkeeratsingh@gmail.com":{password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
 
-      "drpradeepraghav@gmail.com":{password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "drpradeepraghav@gmail.com":{password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
 
-      "drprabhakar84@gmail.com":{password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "drprabhakar84@gmail.com":{password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
 
-      "neetunambi@gmail.com":{password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "neetunambi@gmail.com":{password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
 
-      "drumeshparajuli@gmail.com":{password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "drumeshparajuli@gmail.com":{password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
 
-      "21.hegde@gmail.com":{password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "21.hegde@gmail.com":{password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
 
-      "orthodontics@svdcpondy.ac.in":{password: "MUPINS58", link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"},
+      "orthodontics@svdcpondy.ac.in":{password: "MUPINS59", link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"},
     
     "INST019": { password: "MUPINS19", link: "https://us05web.zoom.us/j/19191919191" },
     "INST020": { password: "MUPINS19", link: "https://us05web.zoom.us/j/20202020202" }
   };
 
   const individualUsers = {
-    "ashwingeorge90@yahoo.com": {
-      password: "MUPIND58",
-      link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+    "deshmukhorthodontic@gmail.com": {
+      password: "MUPIND59",
+      link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
-    "drkannan@bharathuniv.ac.in": {
-      password: "MUPIND58",
-      link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
-    },
-    "dr.kkvakil@yahoo.com": {
-      password: "MUPIND58",
-      link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
-    },
-    "rajaganeshgautam@yahoo.co.in": {
-      password: "MUPIND58",
-      link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+    "drkavithaiyer@gmail.com": {
+      password: "MUPIND59",
+      link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "sajithmathew@hotmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "aplic17cilpa23@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "bracesuppujain@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "dr.harshvardhans@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "renushinde21@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "drkats.mukherjee@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "ranjidr@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "prathameshjalindre@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "drshettyortho@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "drarunnayak@yahoo.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "asmarajan62@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "krutikagaitonde31@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "nikhilmalviya@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "dr.sharatrajan@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "dr.utkarshgandhi@gmail.com":{
       password:"MUPIND12",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "almas0280@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "doctorpartha@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "aivinkc4@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "orthodontistshahid@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "doclohiya@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "dr.jaineel@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "divya.raniwala@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "kpkr823@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "drsharonabraham@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "binutgeorge1974@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "drhafeez.orthodontist.05@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "dr.rishikeshsukumaran@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "bankeralka@yahoo.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "veeresh7515@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "ajma.aishaali@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "tanud3@gmail.com":{
       password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "sija.a.j@gmail.com":{
       password:"MUPIND3",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "daakshudas@gmail.com":{
       password:"MUPIND3",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "devanshiyadav@gmail.com":{
       password:"MUPIND6",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "RUPAM": {
       password: "RUPAM",
-      link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "orthonik@gmail.com":{
       password: "MUPINDLM",
-      link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1",
+      link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1",
     },
     "dr.abhisek24@gmail.com":{
       password: "MUPINDLM",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "drarunimachakraborty@gmail.com":{
       password:"MUPINDLM",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "dr.diegolopez10@gmail.com":{
       password:"MUPINDLM",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "andradadrspanu@gmail.com":{
       password:"MUPINDLM",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "drsumanthranga@gmail.com":{
       password:"MUPINDLM",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "avgorthodontics@gmail.com":{
       password:"MUPINDLM",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "patildk1983@gmail.com":{
       password:"MUPINDLM",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "yudhi79@gmail.com":{
       password:"MUPINDLM",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "drgauriv@gmail.com":{
       password:"MUPINDLM",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "digantorthodontist@gmail.com":{
       password:"MUPINDLM",
-      link:"https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link:"https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "sbbdc.principal@gmail.com":{
       password: "MUPINDLM",
-      link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
     "hrushiaphale@gmail.com":{
       password: "MUPINDLM",
-      link: "https://us06web.zoom.us/j/82719254578?pwd=s8QgOTZid0eHYxz2Z6eTq0uUbgCqbj.1"
+      link: "https://us06web.zoom.us/j/86931816027?pwd=QadpVb5qbhgSb4eW98mOLpw7AlWlU3.1"
     },
   };
 
