@@ -110,6 +110,10 @@ export default function ZoomSection() {
   };
 
   const individualUsers = {
+    "bludwig@kieferorthopaedie-mosel.de":{
+      password:"MUPIND60",
+      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1"
+    },
     "jyothindra@gmail.com": {
       password: "MUPIND60",
       link: "https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
@@ -178,54 +182,7 @@ export default function ZoomSection() {
       password:"MUPIND12",
       link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
     },
-    "aivinkc4@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
-    "orthodontistshahid@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
-    "doclohiya@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
-    "dr.jaineel@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
-    "divya.raniwala@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
-    "kpkr823@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
-    "drsharonabraham@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
-    "binutgeorge1974@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
-    "drhafeez.orthodontist.05@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
-    "dr.rishikeshsukumaran@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
-    "bankeralka@yahoo.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
-    "veeresh7515@gmail.com":{
-      password:"MUPIND1",
-      link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
-    },
+    
     "ajma.aishaali@gmail.com":{
       password:"MUPIND1",
       link:"https://us06web.zoom.us/j/88688138043?pwd=oRS4XYebBfHG0wxt8VbaBQr9iVheUL.1",
