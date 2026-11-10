@@ -40,6 +40,7 @@ import img31 from "../assets/images/instituition-imgs/Gandaki Medical College an
 import img32 from "../assets/images/instituition-imgs/Tagore Dental College and Hospital , Chennai.png"
 import img33 from "../assets/images/instituition-imgs/Bangalore Institute of Dental Sciences, Bengaluru, Karnataka.png"
 import img34 from "../assets/images/instituition-imgs/SRI VENKATESHWARAA DENTAL COLLEGE AND HOSPITAL, PUDUCHGERRY, INDIA.png"
+import img35 from "../assets/images/instituition-imgs/Y.C.M.M&R.D.F’sDentalCollege,Ahmednagar,Maharashtra.png"
 
 
 import Navbar from "../components/Navbar";
@@ -53,7 +54,7 @@ const images = [
   img10, img11, img12,
   img13, img14, img15,
   img16, img17, img18,
-  img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30, img31, img32, img33, img34
+  img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35
 ];
 
 /* ---------------- COLLEGE DATA ---------------- */
@@ -91,7 +92,8 @@ const colleges = [
   { name: "Dept. of Orthodontics and Dento-facial Orthopaedics", city: "Gandaki Medical College and Hospital", state:"", additionalInfo: "Pokhara, Nepal"},
   { name: "Tagore Dental College and Hospital", city: "Chennai,", state:"Tamil Nadu, India"},
   { name: "Bangalore Institute of Dental Sciences", city: "Bangalore,", state:"Karnataka, India"},
-  { name: "Dept. of Orthodontics and Dento-facial Orthopaedics", city: "Sri Venkateshwaraa Dental College and Hospital", state:"Puducherry, India"}
+  { name: "Dept. of Orthodontics and Dento-facial Orthopaedics", city: "Sri Venkateshwaraa Dental College and Hospital", state:"Puducherry, India"},
+  { name: "Dept.of Orthodontics and Dento-facial Orthopaedics,", city: "Y.C.M.M&R.D.F’s Dental College and Hospital", state:"Ahmednagar, Maharashtra, India"},
 ];
 
 /* ---------------- MERGED DATA ---------------- */

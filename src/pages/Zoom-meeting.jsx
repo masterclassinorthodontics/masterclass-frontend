@@ -104,6 +104,8 @@ export default function ZoomSection() {
       "21.hegde@gmail.com":{password: "MUPINS61", link:"https://us06web.zoom.us/j/88398956327?pwd=jZiZy8U8dbf75Wd2uPHa6daFHuPJyX.1"},
 
       "orthodontics@svdcpondy.ac.in":{password: "MUPINS61", link:"https://us06web.zoom.us/j/88398956327?pwd=jZiZy8U8dbf75Wd2uPHa6daFHuPJyX.1"},
+      
+      "drtushargpatil@gmail.com":{password: "MUPINS61", link:"https://us06web.zoom.us/j/88398956327?pwd=jZiZy8U8dbf75Wd2uPHa6daFHuPJyX.1"},
     
     "INST019": { password: "MUPINS19", link: "https://us05web.zoom.us/j/19191919191" },
     "INST020": { password: "MUPINS19", link: "https://us05web.zoom.us/j/20202020202" }
