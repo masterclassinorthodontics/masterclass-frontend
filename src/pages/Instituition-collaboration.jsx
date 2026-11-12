@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import { Helmet } from "react-helmet";
 
 // Main image
-import mainImage from "../assets/images/instituition-imgs/ALL-COLLEGES-min.png";
+import mainImage from "../assets/images/instituition-imgs/CERTIFICATE-1.png";
+import submainimg from "../assets/images/instituition-imgs/CERTIFICATE-2.png";
 import frombg from "../assets/images/from-bg.png";
 
 // Institution images
@@ -105,6 +106,7 @@ const institutions = images.map((img, index) => ({
 const Insticollabsection = () => {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
   return (
     <>
     <Helmet>
@@ -119,7 +121,7 @@ const Insticollabsection = () => {
       >
         {/* Heading */}
         <h2 className="text-[40px] font-semibold text-center leading-snug mb-16"
-        style={{ fontWeight: 550 }}
+        style={{ fontWeight: 500 }}
         >
           <span className="block">List of Educational Institutions</span>
           <span className="block">in</span>
@@ -131,14 +133,20 @@ const Insticollabsection = () => {
         </h2>
 
         {/* Main Image */}
-        <div className="flex justify-center mb-24">
-          <img
-            src={mainImage}
-            alt="MOU Main"
-            onClick={() => setIsOpen(true)}
-            className="w-full md:w-[35vw] object-contain cursor-pointer transition-transform duration-300 hover:scale-105"
-          />
-        </div>
+<div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-24">
+  <img
+    src={mainImage}
+    alt="MOU Main"
+    onClick={() => setSelectedImage(mainImage)}
+    className="w-full md:w-[35vw] object-contain cursor-pointer transition-transform duration-300 hover:scale-105"
+  />
+  <img
+    src={submainimg}
+    alt="MOU Sub Main"
+    onClick={() => setSelectedImage(submainimg)}
+    className="w-full md:w-[35vw] object-contain cursor-pointer transition-transform duration-300 hover:scale-105"
+  />
+</div>
 
         {/* Institutions Grid */}
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -165,26 +173,26 @@ const Insticollabsection = () => {
       </section>
 
       {/* Image Overlay */}
-{isOpen && (
+{selectedImage && (
   <div
     className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-    onClick={() => setIsOpen(false)}
+    onClick={() => setSelectedImage(null)}
   >
     {/* Top Right Buttons */}
     <div className="absolute top-5 right-5 flex items-center gap-4">
       
       {/* Download Button */}
       <a
-        href={mainImage}
-        download="MOU-Main-Image"
+        href={selectedImage}
+        download="MOU-Certificate"
         onClick={(e) => e.stopPropagation()}
         className="bg-white text-black px-4 py-2 rounded-lg font-medium hover:scale-105 transition-transform duration-300"
       >
         <img
-    src="https://img.icons8.com/?size=100&id=DDG5gvNvIbge&format=png&color=000000"
-    alt="Download"
-    className="w-7 h-7"
-  />
+          src="https://img.icons8.com/?size=100&id=DDG5gvNvIbge&format=png&color=000000"
+          alt="Download"
+          className="w-7 h-7"
+        />
       </a>
 
       {/* Close Button */}
@@ -192,7 +200,7 @@ const Insticollabsection = () => {
         className="text-white text-2xl font-bold hover:scale-110 transition-transform duration-300"
         onClick={(e) => {
           e.stopPropagation();
-          setIsOpen(false);
+          setSelectedImage(null);
         }}
       >
         ✕
@@ -201,8 +209,8 @@ const Insticollabsection = () => {
 
     {/* Enlarged Image */}
     <img
-      src={mainImage}
-      alt="MOU Main Enlarged"
+      src={selectedImage}
+      alt="MOU Enlarged"
       onClick={(e) => e.stopPropagation()}
       className="
         max-w-[95%]
