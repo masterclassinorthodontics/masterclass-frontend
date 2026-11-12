@@ -5,6 +5,7 @@ import gridBg from "../assets/images/from-bg.png";
 import termsPdf from "../assets/files/Term-and-condition-faculty.pdf";
 import Navbar from "../components/Navbar";
 import { useState } from "react";
+import Footer from "../components/Footer";
 
 /* ---------------- API BASE ---------------- */
 const PHP_API_BASE_URL = import.meta.env.VITE_PHP_API_BASE_URL;
@@ -170,35 +171,53 @@ export default function MasterclassFaculty() {
           </div>
 
           {/* -------- TERMS DOWNLOAD -------- */}
-          <div className="bg-white h-[15vh] flex justify-between items-center px-6 rounded shadow">
-            <p className="font-medium">Terms and Conditions of Enrollment as Faculty:</p>
-            <a
-              href={termsPdf}
-              download
-            >
-              <img src={downloadpdf} className="w-[25vw]" loading="lazy" />
-            </a>
-          </div>
+          <div className="bg-white min-h-[15vh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-3 md:gap-0 px-0 md:px-6 py-4 rounded shadow">
+
+  <p className="font-medium text-center md:text-left"
+    style={{ fontWeight: 550 }}>
+    Terms and Conditions of Enrollment as Faculty:
+  </p>
+
+  <a href="/files/TERMS-AND-CONDITIONS-OF-JOINING-AS-GUEST-SPEAKER _ RESOURSE FACULTY _ CHAIRPERSON-FOR-THE-MASTERCLASS-UNIVERSITY-PROGRAM (ECO ACADEMY INITIATIVE).pdf"
+  download className="w-full md:w-auto">
+    <img
+      src={downloadpdf}
+      className="w-full md:w-[35vw]"
+      loading="lazy"
+    />
+  </a>
+
+</div>
 
           {/* -------- TERMS CONTENT (SCROLLABLE) -------- */}
           <div className="bg-white h-[45vh] overflow-y-scroll p-6 shadow rounded text-sm">
-            <p> 1. I agree to participate as a Guest Speaker / Resource Faculty / Chairperson at the Masterclass University Program – after being invited for the same by the scientific coordinators of Masterclass. </p><br/>
-            <p>2. I acknowledge that this is going to be an online program – limited to teachers of Orthodontics (Orthodontist only) and post-graduate students in Orthodontics of institutes that ECO Academy has signed an MOU (Memorandum of Understanding) with only.</p><br/>
-            <p>3. I agree to present my lecture in the online program on the "Date and Time" that will be communicated to me by the scientific coordinators after mutual discussion with me.</p><br/>
-            <p>4. I agree to comply with all program-related deadlines provided to me by the scientific coordinators.</p><br/>
-            <p>5. I agree to provide my brief biodata and photograph for printing in Masterclass Symposium / University Program proceedings, posting on the masterclass website and other social media handles.</p><br/>
-            <p>6. I understand that my presentation is educational in nature, matches the session description, and the scientific coordinators reserve the right to change the duration and schedule of the presentation with prior information.</p><br/>
-            <p>7. I agree that my presentation shall be without any commercial interest in the products discussed. In case of any violation, I shall be subjected to legal proceedings whichever may be deemed suitable by partners of ECO Academy.</p><br/>
-            <p>8. I agree to notify the scientific coordinators of Masterclass University Program immediately if an emergency should restrain me from meeting my obligation as a Speaker / Resource Person / Chairperson and will make every attempt possible to provide a qualified substitute Speaker/ Resource Person / Chairperson.</p><br/>
-            <p>9. I shall see to the best of my knowledge that my presentation does not violate any proprietary or personal rights of others (including any copyright, trademark, and privacy rights), is factually accurate, and contains nothing defamatory or otherwise unlawful. I have the full authority to enter into this agreement and have obtained all necessary permissions or licenses from any individuals or organizations whose material is included or used in my presentation.</p><br/>
-          <p>10. I acknowledge that Masterclass University Program (ECO Academy) shall only be providing me the online platform via a link – minimum 48 hours before the presentation. I am aware that all other accessories like – laptop, microphone, headphone, and internet services have to be arranged by myself for the purpose of the presentation.</p><br/>
-          <p>11. I will be using a visual presentation limited to the following format: PowerPoint / Keynote (Mac Users) only. My presentation may contain both audio/visual clips embedded in it.</p><br/>
-          <p>12. I authorize the scientific coordinators of Masterclass University Program to furnish my name, photo, and C.V for promotion of the program on the masterclass website and various social media platforms.</p><br/>
-          <p>13. I agree that my presentation may be recorded but will only be streamed on social media/website for the benefit of other fraternity members after taking separate consent for the same from me.</p><br/>
-          <p>14. I understand that I shall be eligible for an honorarium for my role as a Guest Speaker / Resource Person. The amount could be variable for each session and each Guest Speaker / Resource Person. The decision of the amount shall solely rest on the partners of ECO Academy and I will have no opinion or interference in the same. Chairpersons of the sessions are not eligible for any honorarium.</p><br/>
-          <p>15. I do understand that I have to maintain absolute confidentiality about the content of the private meetings of Guest Speakers / Resource Persons / Chairpersons conducted by the scientific coordinators of the Masterclass University Program and the partners of ECO Academy. Any private information leaked through any forum by any members of the meeting shall call for punitive legal actions deemed suitable by the partners of ECO Academy.</p><br/>
-          <p>16. I do understand that I shall not disrepute or defame the Masterclass University Program, ECO Academy, its partners, the scientific coordinators, and all guest speakers/resource persons/chairpersons associated with the program in any public/social media platforms. Any such act would call for punitive legal consequences deemed suitable by partners of ECO Academy.</p><br/>
-          <p>17. Any controversy or claim arising out of or relating to this agreement shall be entered in any court having jurisdiction of – ECO Academy, Kolkata section only and thereof.</p><br/>
+            <p> 1.&nbsp; I agree to participate as a Guest Speaker / Resource Faculty / Chairperson at the Masterclass University Program – after showing personal interest towards the same / being invited for the same by the scientific coordinators of Masterclass University Program / Proprietor of ECO Academy. </p><br/>
+            <p>2.&nbsp; I acknowledge that this is going to be an online program – the participants of which are limited to teachers of Orthodontics (Orthodontist only) and post-graduate students of Orthodontics of institutes - dental colleges / deemed universities - that have signed an MOU (Memorandum of Understanding) with ECO Academy, also any other orthodontists and post graduate students of Orthodontics belonging to India and abroad.</p><br/>
+            <p>3.&nbsp; I agree to present my lecture in the online program on the "Date and Time" that will be communicated to me by the scientific coordinators of Masterclass University Program / Proprietor of ECO Academy after mutual discussion with me.</p><br/>
+            <p>4.&nbsp; I agree to comply with all program-related deadlines provided to me by the scientific coordinators of Masterclass University Program / Proprietor of ECO Academy. </p><br/>
+            <p>5.&nbsp; I agree to provide my brief biodata and photograph for printing in Masterclass University Program proceedings, posting in the masterclass website (www.masterclassinorthodontics.com) and other social media handles.</p><br/>
+            <p>6.&nbsp; I understand that my presentation is educational in nature, matches the session description, and the scientific coordinators reserve the right to change the duration and schedule of the presentation with prior information.</p><br/>
+            <p>7.&nbsp; I agree that my presentation shall be without any commercial interest in the products discussed. In case I do have - I have to take a formal permission regarding the same via - an intimation directed to the proprietor of ECO Academy  through any official mode of digital communication, in this case - an email directed to - <a
+              href="mailto:ecorthacademy@gmail.com"
+              style={{ textDecoration: "underline" }}
+            >
+              ecorthacademy@gmail.com
+            </a>, followed by an acknowledgement regarding the receipt of the same and permission granted by the proprietor of ECO Academy. In case of any violation, I shall be subjected to legal proceedings whichever may be deemed suitable by proprietor of ECO Academy.</p><br/>
+            <p>8.&nbsp; I agree to notify the scientific coordinators of Masterclass University Program / proprietor of ECO Academy immediately if an emergency should restrain me from meeting my obligation as a Guest Speaker / Resource Person / Chairperson and will make every attempt possible to provide a qualified substitute Speaker/ Resource Person / Chairperson. </p><br/>
+            <p>9.&nbsp; I shall see to the best of my knowledge that my presentation does not violate any proprietary or personal rights of others (including any copyright, trademark, and privacy rights), is factually accurate, and contains nothing defamatory or otherwise unlawful. I have the full authority to enter into this agreement and have obtained all necessary permissions or licenses from any individuals or organizations whose material is included or used in my presentation. The copy of which needs to be forwarded to the proprietor of ECO Academy  through any official mode of digital communication, in this case - an email directed to - <a
+              href="mailto:ecorthacademy@gmail.com"
+              style={{ textDecoration: "underline" }}
+            >
+              ecorthacademy@gmail.com
+            </a> only, followed by an acknowledgement regarding the receipt of the same and permission granted by the proprietor of ECO Academy.</p><br/>
+          <p>10.&nbsp; I acknowledge that Masterclass University Program (ECO Academy initiative) shall only be providing me the online platform via a link – minimum 48 hours before the presentation. I am aware that all other accessories like – laptop, microphone, headphone, and internet services have to be arranged by myself for the purpose of the presentation.</p><br/>
+          <p>11.&nbsp; I will be using a visual presentation limited to the following format: PowerPoint / Keynote (Mac Users) only. My presentation may contain both audio/visual clips embedded in it.</p><br/>
+          <p>12.&nbsp; I authorize the scientific coordinators of Masterclass University Program / proprietor of ECO Academy to furnish my name, photo, and C.V for promotion of the program on the masterclass website (www.masterclassinorthodontics.com) and various social media platforms.</p><br/>
+          <p>13.&nbsp; I agree that my presentation may be recorded but will only be streamed on social media/website for the benefit of other fraternity members after taking separate consent for the same from me.</p><br/>
+          <p>14.&nbsp; I understand that I shall be eligible for an honorarium for my role as a Guest Speaker / Resource Person. The amount could be variable for each session and each Guest Speaker / Resource Person. The decision of the amount shall solely rest on the proprietor of ECO Academy and I will have no opinion or interference in the same. Chairpersons of the sessions are not eligible for any honorarium. </p><br/>
+          <p>15.&nbsp; I do understand that I have to maintain absolute confidentiality about the content of the private meetings / social media groups - of Guest Speakers / Resource Persons / Chairpersons conducted or structured by the scientific coordinators of the Masterclass University Program and the proprietor of ECO Academy. Any private information from the meetings / social media groups leaked through any forum by any members of the meeting / social media groups shall call for punitive legal actions deemed suitable by the proprietor of ECO Academy.</p><br/>
+          <p>16.&nbsp; I do understand that I shall not disrepute / defame / propagate disrepute and defamation of  the Masterclass University Program, ECO Academy, its proprietor, the scientific coordinators, and all guest speakers/resource persons/chairpersons associated with the program in any private / public / organization / society - official / unofficial meetings / social media platforms. Any such act would call for punitive legal consequences deemed suitable by proprietor of ECO Academy. </p><br/>
+          <p>17.&nbsp; Any controversy or claim arising out of or relating to this agreement shall be entered in any court having jurisdiction of – ECO Academy, Kolkata, West Bengal only and thereof.</p><br/>
           </div><br/>
           
           <label className="flex gap-3 items-start">
@@ -231,6 +250,7 @@ export default function MasterclassFaculty() {
 
         </form>
       </section>
+      <Footer/>
     </>
   );
 }

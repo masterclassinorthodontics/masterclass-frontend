@@ -120,6 +120,7 @@ export default function Footer() {
 
           <p className="font-semibold mb-1">Address:</p>
           <p className="text-sm mb-4">
+            ECO Academy,<br/>
             27, Janak Road (Behind Lake Mall),<br />
             Kolkata – 700029,<br />
             West Bengal, India
@@ -130,16 +131,16 @@ export default function Footer() {
             <a href="mailto:ecorthacademy@gmail.com" className="hover:underline">
               ecorthacademy@gmail.com
             </a><br />
-            <a href="mailto:reg.masterclass@gmail.com" className="hover:underline">
+            {/* <a href="mailto:reg.masterclass@gmail.com" className="hover:underline">
               reg.masterclass@gmail.com
-            </a>
+            </a> */}
           </p>
 
           <p className="font-semibold mb-1">Phone No:</p>
           <p className="text-sm">
-            <a href="tel:+919330153855" className="hover:underline">
+            {/* <a href="tel:+919330153855" className="hover:underline">
               +91-9330153855
-            </a><br />
+            </a><br /> */}
             <a href="tel:+918282965779" className="hover:underline">
               +91-8282965779
             </a>
@@ -154,7 +155,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between text-base text-white">
         <p>© 2025 ECO ACADEMY. All rights reserved</p>
         <p>
-          Expertly Designed by{" "}
+          Expertly Designed by{" "}: Deergha Srivastava{" "}
           <span className="font-semibold"></span>
         </p>
       </div>

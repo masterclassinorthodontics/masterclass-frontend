@@ -109,12 +109,28 @@ export default function EnrollmentForm() {
           <LabelInput label="Official Contact No (Mobile) of the Head of the Department of Orthodontics and Dento-facial Orthopedics" name="hod_mobile" value={formData.hod_mobile} onChange={handleChange} />
 
           {/* MOU Box */}
-          <div className="bg-white h-[15vh] flex justify-between items-center px-6 rounded shadow">
-            <strong className="text-lg">Memorandum of Understanding (MOU) Details</strong>
-            <a href="/files/MOU-SAMPLE-FOR-APPROVAL.docx" download> 
-              <img src={downloadmou} alt="Download MOU" className="w-100 cursor-pointer" loading="lazy" />
-            </a>
-          </div>
+<div className="bg-white min-h-[15vh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-3 md:gap-0 px-0 md:px-6 py-4 rounded shadow">
+
+  <strong className="text-lg text-center md:text-left"
+  style={{ fontWeight: 550 }}
+  >
+    Memorandum of Understanding (MOU) Details
+  </strong>
+
+  <a
+    href="/files/MOU-SAMPLE-FOR-APPROVAL.docx"
+    download
+    className="w-full md:w-auto"
+  >
+    <img
+      src={downloadmou}
+      alt="Download MOU"
+      className="w-[85vw] md:w-[35vw] cursor-pointer"
+      loading="lazy"
+    />
+  </a>
+
+</div>
 
           {/* ---TERMS CONTENT--- */}
           <div className="bg-white h-[45vh] overflow-y-scroll p-6 shadow rounded text-sm">

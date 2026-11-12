@@ -118,7 +118,9 @@ const Insticollabsection = () => {
       }}
       >
         {/* Heading */}
-        <h2 className="text-[40px] font-semibold text-center leading-snug mb-16">
+        <h2 className="text-[40px] font-semibold text-center leading-snug mb-16"
+        style={{ fontWeight: 550 }}
+        >
           <span className="block">List of Educational Institutions</span>
           <span className="block">in</span>
           <span className="block">Memorandum of Understanding (MOU)</span>

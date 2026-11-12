@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet";
-import downloadmou from "../assets/images/download-pdf-img.png";
+import downloadmou from "../assets/images/ICON.png";
 import submitenrolbtn from "../assets/images/Submit_enrollment_form-btn.png";
 import gridBg from "../assets/images/from-bg.png";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 const PHP_API_BASE_URL = import.meta.env.VITE_PHP_API_BASE_URL;
@@ -355,60 +356,110 @@ const handleSubmit = async (e) => {
 
           {/* ================= MOU DOWNLOAD ================= */}
 
-          <div className="bg-white h-[15vh] flex justify-between items-center px-6 rounded shadow">
-            <strong className="text-lg">
-              Memorandum of Understanding (MOU) Details
-            </strong>
-            <a href="/files/MOU-SAMPLE-FOR-APPROVAL.docx" download>
-              <img
-                src={downloadmou}
-                alt="Download MOU"
-                className="w-100 cursor-pointer"
-              />
-            </a>
-          </div>
+          <div className="bg-white min-h-[15vh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-3 md:gap-0 px-0 md:px-6 py-4 rounded shadow">
+
+  <p className="text-lg text-center md:text-left"
+  style={{ fontWeight: 550 }}>
+    Financial Clauses for Faculty of Masterclass University Program
+  </p>
+
+  <a
+    href="/files/TERMS-AND-CONDITIONS-OF-FINANCIAL-DETAILS-SUBMISSION-BY-SPEAKERS.pdf"
+    download
+    className="w-full md:w-auto"
+  >
+    <img
+      src={downloadmou}
+      alt="Download MOU"
+      className="w-full md:w-[35vw] cursor-pointer"
+    />
+  </a>
+
+</div>
 
           {/* ================= AGREEMENT TEXT ================= */}
 
           <div className="bg-white h-[45vh] overflow-y-scroll p-6 shadow rounded text-sm leading-relaxed">
-            <h2 className="text-lg font-bold">1. Introduction:</h2>
-            <p className="text-lg">These Terms and Conditions (“Terms”) govern the collection and use of bank account details provided by individuals (“you” or “your”) to ECO Academy (GSTIN-19AAKFE1375Q1ZQ) (“we,” “us,” or “our”). By providing your bank account details, you agree to comply with and be bound by these Terms.</p>
+            <h2 className="text-lg font-bold">1. Introduction :</h2>
+            <p className="text-lg">
+            These Terms and Conditions (“Terms”) govern the collection and use of bank
+            account details provided by individuals (“you” or “your”) to ECO Academy
+            (GSTIN-19AAKFE1375Q1ZQ) (“we,” “us,” or “our”).&nbsp;
+            By providing your bank account details, you agree to comply with and be bound
+            by these Terms.
+            </p>
             <p><br/>
-            <h2 className="text-lg font-bold">2. Purpose of Data Collection:</h2>
+            <h2 className="text-lg font-bold">2. Purpose of Data Collection :</h2>
             <p className="text-lg">We collect your bank account details for the following purposes:</p>
             <div className="mx-10 text-lg">
-            <li>To process payments and transactions related to our services.</li>
+            <li>To process payments and transactions related to our services / or services rendered to us.</li>
             <li>To facilitate refunds and chargebacks if necessary.</li>
             <li>To verify your identity and prevent fraud.</li>
             <li>To comply with legal, regulatory, and compliance requirements.</li><br/>
             </div>
-            <h2 className="text-lg font-bold">3. Data Security:</h2>
-            <p className="text-lg">We are committed to protecting your bank account details. We implement industry-standard security measures to safeguard your information from unauthorized access, disclosure, alteration, and destruction. However, no method of transmission over the internet or electronic storage is 100% secure.</p><br/>
-            <h2 className="text-lg font-bold">4. Data Sharing and Disclosure:</h2>
+            <h2 className="text-lg font-bold">3. Data Security :</h2>
+            <p className="text-lg">We are committed to protecting your bank account details. We implement industry-standard security measures to safeguard your information from unauthorized access, disclosure, alteration, and destruction.&nbsp; However, no method of transmission over the internet or electronic storage is 100% secure.</p><br/>
+            <h2 className="text-lg font-bold">4. Data Sharing and Disclosure :</h2>
             <p className="text-lg">Your bank account details may be shared with:</p>
             <div className="mx-10 text-lg">
                 <li>Trusted third-party service providers who assist us in processing payments and providing services to you. These parties are bound by confidentiality obligations.</li>
                 <li>Regulatory authorities or law enforcement agencies as required by applicable law or in response to valid legal requests.</li>
-            </div>
-            <h2 className="text-lg font-bold">5. Your Rights:</h2>
-            <p>You have the following rights regarding your bank account details:</p>
-            <div className="mx-10">
-              <li className="text-lg"><span className="font-bold">Access:</span>You may request a copy of the bank details we hold about you.</li>
-              <li className="text-lg"><span className="font-bold">Correction:</span>You have the right to request correction of any inaccuracies.</li>
-              <li className="text-lg"><span className="font-bold">Deletion:</span>You may request the deletion of your bank account details, subject to legal obligations.</li>
             </div><br/>
-            <h2 className="text-lg font-bold">6. Data Retention:</h2>
-            <p className="text-lg">We will retain your bank account details only for as long as necessary to fulfil the purposes for which it was collected, or as required by law. Once the retention period expires, we will securely delete or anonymize your information.</p><br/>
-            <h2 className="text-lg font-bold">7. Consent:</h2>
-            <p className="text-lg">By providing your bank account details, you consent to the collection, processing, and use of your information as described in these Terms. You may withdraw your consent at any time, subject to legal restrictions.</p><br/>
-            <h2 className="text-lg font-bold">8. Changes to Terms:</h2>
-            <p className="text-lg">We reserve the right to modify these Terms at any time. If we make significant changes, we will notify you via email or through our website. Continued provision of bank account details following such changes constitutes acceptance of the new Terms.</p><br/>
-            <h2 className="text-lg font-bold">9. Contact Information:</h2>
-            <p>ECO ACADEMY</p>
-            <p>Partner: Dr. Abhisek Ghosh, Dr. Adith Venugopal</p>
-            <p>GF - 27, Janak Road, Behind Lake Mall, Kolkata – 700029, India</p>
-            <p>Mob: +91 933015355, +91 8697191291</p><br/>
-            <h2 className="text-lg font-bold">10. Governing Law:</h2>
+            <h2 className="text-lg font-bold">5. Your Rights :</h2>
+            <p className="text-lg">You have the following rights regarding your bank account details:</p>
+            <div className="mx-10">
+              <li className="text-lg">Access: You may request a copy of the bank details we hold about you.</li>
+              <li className="text-lg">Correction: You have the right to request correction of any inaccuracies.</li>
+              <li className="text-lg">Deletion: You may request the deletion of your bank account details, subject to legal obligations.</li>
+            </div><br/>
+            <div>
+  <p className="text-lg" style={{ margin: 0 }}>
+    <i>
+      (Exercising of the above rights are subjected to a prior formal intimation directed to the proprietor of ECO Academy put forth by you / any person representing you by a legal POA (Power of Attorney) via any official mode of digital communication, in this case - an email directed to -{" "}
+      <a
+        href="mailto:ecorthacademy@gmail.com"
+        style={{ textDecoration: "underline" }}
+      >
+        ecorthacademy@gmail.com
+      </a>{" "}
+      only, followed by an acknowledgement received by you / your representation regarding the receipt of the same by the proprietor of ECO Academy)
+    </i>
+  </p>
+</div>
+<br />
+            <h2 className="text-lg font-bold">6. Data Retention :</h2>
+            <p className="text-lg">We will retain your bank account details only for as long as necessary to fulfil the purposes for which it was collected, or as required by law.&nbsp; Once the retention period expires, we will securely delete or anonymize your information.</p><br/>
+            <h2 className="text-lg font-bold">7.	Financial Disputes :</h2>
+            <p className="text-lg">Any disputes arising out of payments or transactions related to our services / or services rendered to us which may necessitate refunds and chargebacks have to mediated within 30 days of payment / receiving of the funds. The ECO academy shall not entertain any settlement of such disputes beyond this time frame for smooth maintenance of its financial structure.&nbsp;
+            Also for any matters related to financial transactions / disputes - prior formal intimation has to be directed to the proprietor of ECO Academy put forth by you / any person representing you by a legal POA (Power of Attorney) via any official mode of digital communication, in this case - an email directed to - {" "}
+      <a
+        href="mailto:ecorthacademy@gmail.com"
+        style={{ textDecoration: "underline" }}
+      >
+        ecorthacademy@gmail.com
+      </a>{" "} only, followed by an acknowledgement received by you / your representation regarding the receipt of the same by the proprietor of ECO Academy and permission to carry out the same. Violation of the same call for punitive legal actions deemed suitable by the proprietor of ECO Academy. 
+</p><br/>
+            <h2 className="text-lg font-bold">8. Consent :</h2>
+            <p className="text-lg">By providing your bank account details, you consent to the collection, processing, and use of your information as described in these Terms. You may withdraw your consent at any time, subject to legal restrictions.</p>
+            <p className="text-lg"><i>(Withdrawal of consent is subjected to a prior formal intimation directed to the proprietor of ECO Academy put forth by you / any person representing you by a legal POA (Power of Attorney) via any official mode of digital communication, in this case - an email directed to - {" "}
+      <a
+        href="mailto:ecorthacademy@gmail.com"
+        style={{ textDecoration: "underline" }}
+      >
+        ecorthacademy@gmail.com
+      </a>{" "} only, followed by an acknowledgement received by you / your representation regarding the receipt of the same by the proprietor, ECO Academy )</i></p>
+            <br/>
+            <h2 className="text-lg font-bold">9.	Changes to Terms</h2>
+            <p className="text-lg">We reserve the right to modify these Terms at any time. If we make significant changes, we will notify you via email or through our website.&nbsp; Continued provision of bank account details following such changes constitutes acceptance of the new Terms.</p>
+            <br/>
+            <h2 className="text-lg font-bold">10. Contact Information :</h2>
+            <p className="text-lg">ECO ACADEMY</p>
+            <p className="text-lg">Proprietor - Dr. Adith Venugopal</p>
+            <p className="text-lg">Email : ecorthacademy@gmail.com</p>
+            <p className="text-lg">Mob: +91 8282965779</p>
+            <p></p><br/>
+
+            <h2 className="text-lg font-bold">11.	Governing Law :</h2>
             <p className="text-lg">These Terms shall be governed by and construed in accordance with the laws of courts in Kolkata, West Bengal, India over any matters not resolved through arbitration.</p>
 
             
@@ -458,6 +509,7 @@ const handleSubmit = async (e) => {
 </div>
         </form>
       </section>
+      <Footer/>
     </>
   );
 }
