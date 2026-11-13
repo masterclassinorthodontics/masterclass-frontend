@@ -112,7 +112,7 @@ export default function EnrollmentForm() {
 <div className="bg-white min-h-[15vh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-3 md:gap-0 px-0 md:px-6 py-4 rounded shadow">
 
   <strong className="text-lg text-center md:text-left"
-  style={{ fontWeight: 550 }}
+  style={{ fontWeight: 500 }}
   >
     Memorandum of Understanding (MOU) Details
   </strong>

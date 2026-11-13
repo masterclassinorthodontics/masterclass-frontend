@@ -174,7 +174,7 @@ export default function MasterclassFaculty() {
           <div className="bg-white min-h-[15vh] flex flex-col md:flex-row justify-center md:justify-between items-center gap-3 md:gap-0 px-0 md:px-6 py-4 rounded shadow">
 
   <p className="font-medium text-center md:text-left"
-    style={{ fontWeight: 550 }}>
+    style={{ fontWeight: 500 }}>
     Terms and Conditions of Enrollment as Faculty:
   </p>
 
