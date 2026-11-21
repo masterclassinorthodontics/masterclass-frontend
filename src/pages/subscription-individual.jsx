@@ -37,23 +37,23 @@ const subscriptionindividual = () => {
 
           {/* Right Section: Remaining 50% width on lg+ */}
           <div className="w-full lg:w-1/2 flex justify-center items-center px-4">
-            <div className="relative w-full max-w-[600px] lg:max-w-[680px] aspect-[7/10] overflow-hidden flex items-center justify-center">
+            <div className="relative w-full max-w-[840px] lg:max-w-[960px] aspect-[7/10] overflow-hidden flex items-center justify-center">
               {/* Background Board Image */}
               <img
                 src={bodybtn}
                 alt="Subscription Plans Board"
-                className="w-full h-full object-fill rounded-xl select-none pointer-events-none"
+                className="w-full h-full object-contain rounded-xl select-none pointer-events-none"
                 loading="lazy"
               />
 
-              {/* Independent SUBSCRIBE NOW heading (adjusting its px won't move the 4 buttons) */}
-              <h2 className="absolute top-[14%] sm:top-[15%] left-1/2 -translate-x-1/2 z-10 font-semibold text-base md:text-xl lg:text-2xl blink text-center whitespace-nowrap px-4">
+              {/* Independent SUBSCRIBE NOW heading */}
+              <h2 className="absolute top-[22%] sm:top-[22%] left-1/2 -translate-x-1/2 z-10 font-semibold text-base md:text-xl lg:text-2xl blink text-center whitespace-nowrap px-6">
                 SUBSCRIBE NOW
               </h2>
 
               {/* Overlay strictly inside bodybtn for the 4 identical buttons */}
-              <div className="absolute inset-0 flex flex-col items-center pt-[32%] pb-[10%] px-[7%] min-h-0 min-w-0">
-                <div className="w-full flex-1 min-h-0 flex flex-col justify-between gap-2">
+              <div className="absolute inset-0 flex flex-col items-center pt-[44%] pb-[20%] px-[1%] min-h-0 min-w-0">
+                <div className="w-full flex-1 min-h-0 flex flex-col justify-center gap-2 sm:gap-2.5">
                   <Link
                     to="/subscription-onemonth"
                     className="w-full flex-1 min-h-0 flex items-center justify-center transition-transform duration-200 hover:scale-[1.02]"
@@ -61,7 +61,7 @@ const subscriptionindividual = () => {
                     <img
                       src={subsone}
                       alt="1 Month Subscription"
-                      className="max-w-[68%] max-h-full w-auto h-auto object-contain"
+                      className="w-[60%] h-auto object-contain"
                     />
                   </Link>
 
@@ -72,7 +72,7 @@ const subscriptionindividual = () => {
                     <img
                       src={substwo}
                       alt="3 Months Subscription"
-                      className="max-w-[68%] max-h-full w-auto h-auto object-contain"
+                      className="w-[60%] h-auto object-contain"
                     />
                   </Link>
 
@@ -83,7 +83,7 @@ const subscriptionindividual = () => {
                     <img
                       src={substhree}
                       alt="6 Months Subscription"
-                      className="max-w-[68%] max-h-full w-auto h-auto object-contain"
+                      className="w-[60%] h-auto object-contain"
                     />
                   </Link>
 
@@ -94,7 +94,7 @@ const subscriptionindividual = () => {
                     <img
                       src={subsfour}
                       alt="12 Months Subscription"
-                      className="max-w-[68%] max-h-full w-auto h-auto object-contain"
+                      className="w-[60%] h-auto object-contain"
                     />
                   </Link>
                 </div>
