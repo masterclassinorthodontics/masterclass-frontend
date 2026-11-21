@@ -41,7 +41,7 @@ export default function FAQmainSection() {
     </Helmet>
       <Navbar />
 
-      <section className="w-full py-40"
+      <section className="w-full py-8"
       style={{
         backgroundImage:`url(${bothbg})`,
         backgroundPosition:"center",

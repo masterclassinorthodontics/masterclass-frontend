@@ -101,7 +101,7 @@ export default function MasterclassFaculty() {
       <Navbar />
 
       <section
-        className="min-h-screen bg-gray-100 px-6 py-[40%] lg:py-[10%]"
+        className="min-h-screen bg-gray-100 px-6 py-[2%]"
         style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,0.78),
           rgba(255,255,255,0.78)),url(${gridBg})`,

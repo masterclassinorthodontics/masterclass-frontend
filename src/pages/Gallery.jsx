@@ -13,7 +13,7 @@ export default function GallerySection() {
       <title>GALLERY - Masterclass in Orthodontics</title>
     </Helmet>
     <Navbar/>
-    <section className="w-full py-40 md:py-32 lg:py-48 bg-no-repeat bg-cover bg-center"
+    <section className="w-full py-8 bg-no-repeat bg-cover bg-center"
     style={{
       backgroundImage:`url(${bothbg})`,
     }}

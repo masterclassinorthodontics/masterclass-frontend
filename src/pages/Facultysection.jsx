@@ -24,7 +24,7 @@ const FacultySection = () => {
     </Helmet>
     <Navbar/>
     <section
-      className="w-full py-16"
+      className="w-full py-2"
       style={{
         backgroundImage: `linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)), url(${bgimg})`,
         backgroundSize: "contain",

@@ -4,7 +4,7 @@ import MyImage from "../../assets/images/banner-img.png"; // banner image link
 
 const BannerSection = () => {
   return (
-    <section className="w-full h-full flex items-center justify-center pt-[16vh] overflow-hidden">
+    <section className="w-full h-full flex items-center justify-center overflow-hidden">
   <img
     src={MyImage}
     alt="Banner"

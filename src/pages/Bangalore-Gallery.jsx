@@ -43,7 +43,7 @@ const BangGallerySection = () => {
   return (
     <>
     <Navbar/>
-    <section className="py-36 bg-gray-100"
+    <section className="py-16"
     style={{
         backgroundImage:`url(${bothbg})`,
         backgroundPosition:"bottom"

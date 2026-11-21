@@ -46,7 +46,7 @@ const MasterclassUniversityProgram = () => {
 
       {/* 🔹 FIRST SECTION (unchanged) */}
       <section
-        className="w-full pt-40 bg-no-repeat bg-center bg-cover md:bg-cover lg:bg-cover"
+        className="w-full py-6 bg-no-repeat bg-center bg-cover md:bg-cover lg:bg-cover"
         style={{
           backgroundImage: `url(${universitybg})`,}}
       >

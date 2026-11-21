@@ -68,7 +68,7 @@ export default function ContactpageSection() {
 
       {/* CONTACT SECTION */}
       <section
-        className="w-full py-20 md:py-32 lg:py-40"
+        className="w-full py-20"
         style={{
           backgroundImage:
             `url(${bothbg})`,

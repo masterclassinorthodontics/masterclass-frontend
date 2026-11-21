@@ -137,7 +137,7 @@ const AcademicCurriculumsection = () => {
     </Helmet>
     <Navbar/>
     <section
-      className="w-full py-32"
+      className="w-full py-8"
       style={{
         backgroundImage: `linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)), url(${gridbg})`,
         backgroundSize: "contain",

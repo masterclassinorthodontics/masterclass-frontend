@@ -22,7 +22,7 @@ export default function Foreword() {
 
       {/* FULL-WIDTH BACKGROUND */}
       <section
-        className="w-full py-28"
+        className="w-full py-4"
         style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),url(${pagebg})`,
           backgroundSize: "cover",

@@ -9,7 +9,7 @@ export default function TermsConditionsSection() {
       <title>TERMS & CONDITIONS - Masterclass in Orthodontics</title>
     </Helmet>
     <Navbar/>
-    <section className="max-w-5xl mx-auto px-4 py-40 text-gray-800 space-y-8">
+    <section className="max-w-5xl mx-auto px-4 py-4 text-gray-800 space-y-8">
       
       {/* Title */}
       <div className="text-center mb-6">

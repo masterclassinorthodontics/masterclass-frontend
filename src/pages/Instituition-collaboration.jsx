@@ -114,7 +114,7 @@ const Insticollabsection = () => {
     </Helmet>
       <Navbar />
 
-      <section className="w-full px-6 py-40"
+      <section className="w-full px-6 py-10"
       style={{
         backgroundImage: `linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),url(${frombg})`
       }}

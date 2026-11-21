@@ -10,7 +10,7 @@ export default function PrivacyPolicySection() {
       <title>PRIVACY POLICY - Masterclass in Orthodontics</title>
     </Helmet>
     <Navbar/>
-    <section className="w-full py-36 px-6 bg-white">
+    <section className="w-full py-4 px-6 bg-white">
       <div className="max-w-6xl mx-auto text-center">
         
         {/* Title */}

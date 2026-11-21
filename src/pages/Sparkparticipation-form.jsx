@@ -108,7 +108,7 @@ export default function SparkparticipationForm() {
       {/* Full Width Images */}
 
 <div
-  className="w-full px-[8%] pt-[35%] lg:pt-[20%] xl:pt-[10%]"
+  className="w-full px-[8%] pt-[2%]"
    onClick={() => setBanner3Zoomed(false)}
   style={{
     backgroundImage: `linear-gradient(

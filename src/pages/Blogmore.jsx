@@ -6,7 +6,7 @@ export default function MoreBlogsection(){
     return(
         <>
         <Navbar/>
-    <section className="w-full py-40 bg-no-repeat bg-cover bg-center"
+    <section className="w-full py-10 bg-no-repeat bg-cover bg-center"
     style={{
         backgroundImage:`url(${bothbg})`,
     }}

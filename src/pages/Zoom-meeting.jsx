@@ -332,7 +332,7 @@ export default function ZoomSection() {
       <title>ACCESS TO LIVE WEBINAR - Masterclass in Orthodontics</title>
     </Helmet>
     <Navbar/>
-    <section className="w-full min-h-screen pt-48 pb-10 bg-no-repeat bg-cover bg-center"
+    <section className="w-full min-h-screen pt-10 pb-10 bg-no-repeat bg-cover bg-center"
     style={{
         backgroundImage:`linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),url(${pagebg})`,
     }}

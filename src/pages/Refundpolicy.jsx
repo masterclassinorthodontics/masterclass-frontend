@@ -9,7 +9,7 @@ export default function Refundpolicysection(){
       <title>REFUND POLICY - Masterclass in Orthodontics</title>
     </Helmet>
     <Navbar/>
-    <section className="max-w-5xl mx-auto px-4 py-[10%]">
+    <section className="max-w-5xl mx-auto px-4 py-[2%]">
   {/* Title */}
   <div className="text-center mb-10">
     <h1 className="text-3xl font-bold text-[#3B1D82]">

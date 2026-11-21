@@ -13,7 +13,7 @@ export default function RevolutionSection() {
       <title>BLOGS - Masterclass in Orthodontics</title>
     </Helmet>
     <Navbar/>
-    <section className="w-full min-h-screen flex items-center justify-center py-40"
+    <section className="w-full min-h-screen flex items-center justify-center py-4"
     style={{
         backgroundImage:`url(${bothbg})`,
     }}
